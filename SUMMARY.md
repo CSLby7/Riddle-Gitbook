@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Checklist for Programming Practices](README.md)
+* [Overview](README.md)
+* [Checklist for Programming Practices](<README (1).md>)
 * [Cheat Sheet](cheat-sheet.md)
 * [Algorithm Topics](algorithm-topics/README.md)
   * [Binary Search](algorithm-topics/binary-search.md)
@@ -16,7 +17,7 @@
   * [Dynamic Programming](algorithm-topics/dynamic-programming.md)
   * [Prefix Sum/Product](algorithm-topics/prefix-sum-product.md)
   * [Graph](algorithm-topics/graph.md)
-  * [Bits](algorithm-topics/bits.md)
+  * [Bit Manipulation](algorithm-topics/bit-manipulation.md)
   * [Trie](algorithm-topics/trie.md)
   * [Cache Schedule Mechanism](algorithm-topics/cache-schedule-mechanism.md)
   * [Math](algorithm-topics/math.md)
