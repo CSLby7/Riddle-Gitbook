@@ -83,6 +83,8 @@ icon: map-location-dot
   * [Optimal Answer](https://leetcode.com/problems/unique-length-3-palindromic-subsequences/submissions/1533051214/?envType=company\&envId=google\&favoriteSlug=google-three-months). TC: $$O(n)$$, SC: $$O(1)$$
 * LC 389. Find the Difference
   * [Optimal Answer](https://leetcode.com/problems/find-the-difference/submissions/1596986506). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 2043. Simple Bank System
+  * [Optimal Answer](https://leetcode.com/problems/simple-bank-system/submissions/1895971427). For each method, TC: $$O(1)$$, SC: $$O(1)$$
 
 ### **TreeMap/TreeSet (6)**
 
