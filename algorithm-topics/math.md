@@ -91,6 +91,8 @@ icon: calculator-simple
   * How do you know if 4 points can form a rectangle?
     * > Notice that a necessary and sufficient condition to form a rectangle with two opposite pairs of points is that the points must have the **same center and radius**.
   * [Optimal Answer.](https://leetcode.com/problems/minimum-area-rectangle-ii/submissions/1528115788/) TC: $$O(n^2*log{n})$$, SC: $$O(n^2)$$
+* LC 3195. Find the Minimum Area to Cover All Ones I
+  * [Optimal Answer](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/submissions/1895894255/). TC: $$O(m*n)$$, SC: $$O(1)$$
 * :red\_circle: LC 3197. Find the Minimum Area to Cover All Ones II
   * Core ideas
     * Firstly, think about how many ways there are to split an entire matrix into 3 rectangles.

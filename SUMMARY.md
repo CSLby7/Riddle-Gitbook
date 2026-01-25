@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Checklist for Programming Practices](<README (1).md>)
+* [Checklist for Programming Practices](checklist-for-programming-practices.md)
 * [Cheat Sheet](cheat-sheet.md)
 * [Algorithm Topics](algorithm-topics/README.md)
   * [Binary Search](algorithm-topics/binary-search.md)
