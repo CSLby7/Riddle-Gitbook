@@ -85,6 +85,11 @@ icon: map-location-dot
   * [Optimal Answer](https://leetcode.com/problems/find-the-difference/submissions/1596986506). TC: $$O(n)$$, SC: $$O(1)$$
 * LC 2043. Simple Bank System
   * [Optimal Answer](https://leetcode.com/problems/simple-bank-system/submissions/1895971427). For each method, TC: $$O(1)$$, SC: $$O(1)$$
+* :white\_circle: LC 966. Vowel Spellchecker
+  * [Optimal Answer](https://leetcode.com/problems/vowel-spellchecker/submissions/1896956364).&#x20;
+  * Assume $$C$$ is the total _content_ of `wordlist` and `queries` .
+    * TC: $$O(C)$$
+    * SC: $$O(C)$$
 
 ### **TreeMap/TreeSet (6)**
 

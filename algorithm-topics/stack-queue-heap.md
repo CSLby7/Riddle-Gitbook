@@ -68,6 +68,9 @@ icon: shelves
     * Try to handle numbers in the input string that have more than 1 digit without using a `while` loop
   * I finally made it by myself (I already saw the solution in previous rounds)!
   * [Optimal Answer.](https://leetcode.com/problems/basic-calculator/submissions/1509884058) TC: $$O(n$$), SC: $$O(n)$$
+* :orange\_circle: LC 227. Basic Calculator II
+  * Although it does not have `()`  , but it's more complicated than LC 224 due to `*/`&#x20;
+  * [Optimal Answer](https://leetcode.com/problems/basic-calculator-ii/submissions/1897113275). TC: $$O(n)$$, SC: $$O(1)$$
 * :orange\_circle: LC 1249. Minimum Remove to Make Valid Parentheses
   * Approach 1
     * I came up with this approach independently before checking the LeetCode editorial. The core idea is similar to the solution for **LC 224 (Basic Calculator).**
