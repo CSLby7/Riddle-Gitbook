@@ -156,6 +156,8 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/maximize-subarrays-after-removing-one-conflicting-pair/submissions/1890596485).&#x20;
     * Let $$N$$ be the input integer and $$P$$ be the number of conflicting pairs.
     * TC: $$O(N+P)$$, SC: $$O(N)$$
+* LC 1762. Buildings With an Ocean View
+  * [Optimal Answer](https://leetcode.com/problems/buildings-with-an-ocean-view/submissions/1898289650). TC: $$O(N)$$, SC: $$O(N)$$
 
 ### Simulation
 
