@@ -98,3 +98,5 @@ icon: calculator-simple
     * Firstly, think about how many ways there are to split an entire matrix into 3 rectangles.
     * Secondly, for each way, think about what you need to do for each rectangle.
   * [Optimal Answer](https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-ii/submissions/1895779776). TC: $$O(m^2*n^2)$$, SC: $$O(m*n)$$
+* :orange\_circle: LC 3025. Find the Number of Ways to Place People I
+  * [Optimal Answer](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/submissions/1899348011). TC: $$O(n^2)$$, SC: $$O(logn)$$

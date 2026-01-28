@@ -99,6 +99,7 @@ icon: scroll
 * Compare the values of 2 lists of `ArrayList<Integer>`: `list1.equals(list2)`
 * Remove all items from `ArrayList`: `ArrayList.clear()`
 * Encode `int[]` to `String`: `Arrays.toString(arr)`&#x20;
+* For Java `Arrays.sort(arr)` , TC: $$O(n*logn)$$, SC: $$O(logn)$$
 
 ### **Linked List**
 
