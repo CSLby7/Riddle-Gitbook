@@ -87,6 +87,11 @@ icon: shelves
   * [Optimal Answer](https://leetcode.com/problems/dota2-senate/submissions/1465461093). TC: $$O(n)$$, SC: $$O(n)$$
 * LC 346. Moving Average from Data Stream
   * [Optimal Answer](https://leetcode.com/problems/moving-average-from-data-stream/submissions/1487510038). TC: $$O(1)$$, SC: $$O(n)$$
+* :white\_circle: LC 362. Design Hit Counter
+  * At first, I used binary search in `getHits()` and didn't remove anything in the queue because I didn't realize that `getHits()` is called with timestamps in increasing order as well.
+  * Optimal Answer.&#x20;
+    * TC: Both `hit()` and `getHits()`: amortized $$O(1)$$
+    * SC: O(1). Max 300 items in the queue.
 
 ### **Monotonic Queue (1)**
 
