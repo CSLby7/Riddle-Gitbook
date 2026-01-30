@@ -3,7 +3,7 @@ description: Notes and typical questions for bits related problems
 icon: binary
 ---
 
-# Bits
+# Bit Manipulation
 
 ## **Notes**
 
@@ -68,3 +68,5 @@ icon: binary
   * [Optimal Answer](https://leetcode.com/problems/bitwise-and-of-numbers-range/submissions/1875704761). TC: $$O(1)$$, SC: $$O(1)$$
 * :red\_circle: LC 751. IP to CIDR
   * [Optimal Answer](https://leetcode.com/problems/ip-to-cidr/submissions/1894098305). Assume the output size is $$k$$, TC: $$O(k)$$, SC: $$O(1)$$
+* :orange\_circle: LC 2571. Minimum Operations to Reduce an Integer to 0
+  * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/submissions/1901645947). TC: $$O(logn)$$, SC: $$O(1)$$
