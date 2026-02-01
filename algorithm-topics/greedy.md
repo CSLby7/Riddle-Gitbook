@@ -93,6 +93,13 @@ icon: face-tongue-money
   * This problem can also be resolved by DP and Stack approaches but SC in these 2 approaches is worse than the optimal solution.
   * I came up with a [Stack solution](https://leetcode.com/problems/longest-valid-parentheses/submissions/1493676712) by myself. Although it's not as concise as the official solution in editorial, it's more understandable.
   * [Optimal Solution](https://leetcode.com/problems/longest-valid-parentheses/submissions/1493684623). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 1717. Maximum Score From Removing Substrings
+  * Key point: If you removed all `ab` from initial `s`, you will never get any `ab` while removing `ba` after that, and **vice versa**
+    * When you removed all `ab` you removed ALL `a` that have `b` on the right of it.
+    * Let's say we removed `ba` now and get `ab` (character `a` from the left of the `b` and character `b` on the right of the `a`, so after deleting `ba` strings concatenate into `ab`).
+    * But stop, **"character `b` on the fight of the `a`"**, but didn't I tell you one point back that we deleted ALL `a` that had `b` on right? This concludes my proof; you can prove so for `ba` as well, because situations are symmetrical.
+  * Approach 1 using Stack: [Answer](https://leetcode.com/problems/maximum-score-from-removing-substrings/submissions/1904822217). TC: $$O(n)$$, SC: $$O(n)$$
+  * :thumbsup: Approach 2 using 2 pointers: [Optimal Answer](https://leetcode.com/problems/maximum-score-from-removing-substrings/submissions/1904828436). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **Range/Interval Problem (10)**
 
