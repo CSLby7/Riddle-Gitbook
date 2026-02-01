@@ -25,6 +25,11 @@ icon: list-tree
 
 ### **Max Segment Tree**
 
+* LC 3477. Fruits Into Baskets II
+  * Same as below.
+  * [Optimal Answer](https://leetcode.com/problems/fruits-into-baskets-ii/submissions/1903917165/).
+  * TC: $$O(n+n*((log{n})^2+log{n})) => O(n*log{n})$$
+  * SC: $$O(n)$$
 * :red\_circle: TC 3479. Fruits Into Baskets III
   * [Optimal Answer](https://leetcode.com/problems/fruits-into-baskets-iii/submissions/1903683170).
   * TC: $$O(n+n*((log{n})^2+log{n})) => O(n*log{n})$$
