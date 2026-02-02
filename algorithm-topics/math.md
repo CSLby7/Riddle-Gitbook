@@ -82,6 +82,9 @@ icon: calculator-simple
   * [Optimal Answer](https://leetcode.com/problems/factorial-trailing-zeroes/submissions/1875808105). TC: $$O(logn)$$, SC: $$O(1)$$
 * :white\_circle: LC 149. Max Points on a Line
   * [Optimal Answer](https://leetcode.com/problems/max-points-on-a-line/submissions/1875913261). TC: $$O(n^2)$$, SC: $$O(n)$$
+* :orange\_circle: LC 273. Integer to English Words
+  * **English Number Grouping Rule:** English uses a **base-1000 grouping system** when reading and writing large numbers. Digits are grouped every three places: **thousand (10³), million (10⁶), billion (10⁹), trillion (10¹²)**. This differs from Chinese, which groups numbers by **10,000 (万)**. For example, 10,000 is read as _ten thousand_ in English, and 100,000,000 (一亿) is _one hundred million_.
+  * [Optimal Answer](https://leetcode.com/problems/integer-to-english-words/submissions/1904898924). TC: $$O(log_{10}n)$$, SC: $$O(1)$$
 
 ### Geometry
 
