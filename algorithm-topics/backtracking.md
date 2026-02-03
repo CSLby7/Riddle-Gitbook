@@ -190,3 +190,5 @@ private void backtracking(parameters) {
     * > For those who get TLE on 80/81, don't by disheartened because some sick guy who has no life wants to show that he can screw up backtracking by creating a very dense graph, it is not your problem to not coming up with a pruning trick for certain use cases.
       >
       > It also a joke to expect someone come's up with an Eularian path finding algo without knowing it (which is the efficient algo for this type of problem). BTW, also don't read some of the "smart" solutions here that just copy the above algorithm and claims it is "just dfs" (although the code might look deceptively simple), these people have no idea why it works just pretend they have.
+* :red\_circle: LC 679. 24 Game
+  * [Optimal Answer](https://leetcode.com/problems/24-game/submissions/1906211998/). TC: $$O(n^3*n!*(n-1)!*3^{n-1})$$, SC: $$O(n^2)$$
