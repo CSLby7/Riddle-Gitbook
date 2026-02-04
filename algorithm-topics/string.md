@@ -78,6 +78,8 @@ icon: arrow-up-a-z
   * [Optimal Solution](https://leetcode.com/problems/string-to-integer-atoi/submissions/1492186623). TC: $$O(n)$$, SC: $$O(1)$$
 * :white\_circle: LC 58. Length of Last Word
   * [Optimal Answer](https://leetcode.com/problems/length-of-last-word/submissions/1770042735). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 3136. Valid Word
+  * [Optimal Answer](https://leetcode.com/problems/valid-word/submissions/1907426573). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Simulation
 
