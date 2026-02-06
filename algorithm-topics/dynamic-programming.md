@@ -73,6 +73,8 @@ icon: diagram-successor
     * SC: $$N^{2}+H*H$$
 * :red\_circle: LC 3287. Find the Maximum Sequence Value of Array
   * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/submissions/1552076940/). TC: $$O(n*k)$$, SC: $$O(n*k)$$
+* :orange\_circle: LC 3202. Find the Maximum Length of Valid Subsequence II
+  * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/submissions/1909970543). TC: $$O(n*k)$$, SC: $$O(k^2)$$
 
 ### 2D Matrix Problems
 
@@ -245,6 +247,10 @@ icon: diagram-successor
     * This approach is hard to understand. I feel like its core logic/concept (keep exploring the array though elements within the array are not always valid) is similar to another 2-pointer question.&#x20;
     * > While **the content of sub might not be an actual subsequence from nums**, its length corresponds to the length of the LIS. This is because every time we append a number to sub, it means we have found a longer increasing sequence than any we have seen before. When we replace an element in sub, we're not extending the length of the sequence, but we are making the increasing sequence that we can potentially build later more flexible (i.e., able to accommodate smaller subsequent numbers).
     * [Optimal Answer](https://leetcode.com/problems/longest-increasing-subsequence/submissions/1511884792/). TC: $$O(n*log{n})$$, SC: $$O(n)$$
+  * :red\_circle: Approach 3: Segment Tree
+    * [Answer](https://leetcode.com/problems/longest-increasing-subsequence/submissions/1908857387/).  Let n be the input length, and m be `max-min+1`&#x20;
+    * TC: $$O(nlogm)$$
+    * SC: $$O(m)$$
 * :red\_circle: LC 354. Russian Doll Envelopes
   * It's not a DP question but I add it here because it relates to above LC 300.
   * Key points
