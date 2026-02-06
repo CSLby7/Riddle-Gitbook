@@ -73,8 +73,6 @@ icon: diagram-successor
     * SC: $$N^{2}+H*H$$
 * :red\_circle: LC 3287. Find the Maximum Sequence Value of Array
   * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/submissions/1552076940/). TC: $$O(n*k)$$, SC: $$O(n*k)$$
-* :orange\_circle: LC 3202. Find the Maximum Length of Valid Subsequence II
-  * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/submissions/1909970543). TC: $$O(n*k)$$, SC: $$O(k^2)$$
 
 ### 2D Matrix Problems
 
@@ -236,6 +234,18 @@ icon: diagram-successor
   * Difference
     * subsequence: order matters, can skip element
     * substring: order matters, must consecutive
+  * For subsequence problems, think about "If I pick an element, what info about the past do I need to know to decide if I can append it?"
+    * That info becomes your DP state.
+      * If it’s just the last value → `dp[last]`
+      * If it’s last two-ish pattern → `dp[a][b]` (like LC3202)
+      * If it’s last value + budget → `dp[last][used]`&#x20;
+        * The “budget” can be _anything constrained_:
+          * number of changes
+          * number of mismatches
+          * number of deletions
+          * number of replacements
+          * number of violations
+          * number of operations
 
 #### :jigsaw: **Classic Subsequence/Subarray**
 
@@ -273,6 +283,8 @@ icon: diagram-successor
 * LC 1035. Uncrossed Lines
   * Same as above LC 1143
   * [Optimal Answer](https://leetcode.com/problems/uncrossed-lines/submissions/1761950446/).  TC: $$O(M*N)$$, SC: $$O(min(M,N))$$
+* :orange\_circle: LC 3202. Find the Maximum Length of Valid Subsequence II
+  * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/submissions/1909970543). TC: $$O(n*k)$$, SC: $$O(k^2)$$
 
 #### :jigsaw: **Edit Distance series**
 
