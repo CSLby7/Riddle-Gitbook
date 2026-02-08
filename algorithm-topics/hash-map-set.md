@@ -90,6 +90,11 @@ icon: map-location-dot
   * Assume $$C$$ is the total _content_ of `wordlist` and `queries` .
     * TC: $$O(C)$$
     * SC: $$O(C)$$
+* :white\_circle: LC 348. Design Tic-Tac-Toe
+  * To achieve the optimal answer, always think about “What numeric quantity reaches an extreme when the answer happens?”
+    * Try to express the win/answer condition as a **formula**, not a state.
+    * Look for **sum / difference / count / max / min / parity**.
+  * [Optimal Answer](https://leetcode.com/problems/design-tic-tac-toe/submissions/1911976445). TC: $$O(1)$$, SC: $$O(n)$$
 
 ### **TreeMap/TreeSet (6)**
 
