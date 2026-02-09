@@ -78,3 +78,6 @@ icon: integral
 * :white\_circle: LC 3494. Find the Minimum Amount of Time to Brew Potions
   * My [original answer](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/submissions/1593791521) can be simplified in terms of implementation (do not need to keep updating the prefix sum array).
   * [Optimal Answer](https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/submissions/1593793793). TC: $$O(m*n)$$, SC: $$O(n)$$
+* :orange\_circle: LC 3234. Count the Number of Substrings With Dominant Ones
+  * My original answer can pass most test cases but get TLE on some corner cases, and below optimal answer and pass all test cases.
+  * [Optimal Answer](https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/submissions/1913003363). TC: $$O(n*\sqrt{n})$$, SC: $$O(n)$$
