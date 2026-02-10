@@ -73,6 +73,10 @@ icon: diagram-successor
     * SC: $$N^{2}+H*H$$
 * :red\_circle: LC 3287. Find the Maximum Sequence Value of Array
   * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-sequence-value-of-array/submissions/1552076940/). TC: $$O(n*k)$$, SC: $$O(n*k)$$
+* :orange\_circle: LC 2327. Number of People Aware of a Secret
+  * I came up with an n^2 solution, but that's not good enough.
+  * The definition of this dp array and how to do state transition is tricky.
+  * [Optimal Answer](https://leetcode.com/problems/number-of-people-aware-of-a-secret/submissions/1914353991). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### 2D Matrix Problems
 
