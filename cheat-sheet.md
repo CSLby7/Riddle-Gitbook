@@ -18,6 +18,7 @@ icon: scroll
 
 * Modulo Distributive Property
   * $$(a+b)\%mod=((a\%mod)+(b\%mod))\%mod$$
+  * $$(a-b)\%mod=(a-b+mod)\%mod$$
   * Taking the modulus early can sometimes help prevent overflow in problems with huge numbers.
 *   Get the greatest common divisor
 
