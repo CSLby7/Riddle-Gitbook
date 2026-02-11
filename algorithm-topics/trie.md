@@ -63,3 +63,6 @@ icon: spell-check
     * Assume $$M$$ is the number of rows, $$N$$ is the number of columns, $$W$$ is the number of words, $$Lmax$$ is the max word length of those words,
     * TC: $$O(M*N*(4*3^{Lmax-1}))$$ &#x20;
     * SC: $$O(W*Lmax)$$
+* :orange\_circle: LC 3043. Find the Length of the Longest Common Prefix
+  * Damn, I should at least realize the HashMap solution. I feel so bad!
+  * Approach 1 using HashMap. [Answer](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/submissions/1915485629). TC: $$O(m*logm+n*logn)$$, SC: $$O(m*logm)$$
