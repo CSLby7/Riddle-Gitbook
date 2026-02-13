@@ -1,13 +1,26 @@
 ---
-description: Notes and typical questions for cache schedule mechanism
+description: Notes and typical questions for Cache & Priority mechanism
 icon: hourglass-clock
 ---
 
-# Cache Schedule Mechanism
+# Cache & Priority Systems
 
 ## **Notes**
 
-* Placeholder
+These problems require maintaining a dynamically changing set of items ordered by some ranking rule (recency, frequency, priority, etc.), while supporting fast add, update, delete, and retrieval operations.
+
+These problems combine:
+
+* O(1) lookup (HashMap)
+* Ordered maintenance (Heap / DLL / TreeMap)
+* State mutation (priority/frequency/recency changes)
+
+Focus:
+
+* Maintain invariants
+* Handle tie-breaking
+* Coordinate multiple data structures correctly
+* Understand space tradeoffs (lazy deletion vs strict removal)
 
 ## **Typical Questions**
 
@@ -26,3 +39,15 @@ icon: hourglass-clock
   * [Optimal Answer](https://leetcode.com/problems/lfu-cache/submissions/1473194931/)
     * TC: $$O(1)$$ for both `get` and `put`
     * SC: $$O(capacity)$$
+* :orange\_circle: LC 3408. Design Task Manager
+  * Approach 1 - TreeMap+TreeSet:
+    * [Answer](https://leetcode.com/problems/design-task-manager/submissions/1918437718)
+      * TC: $$O(logn)$$ for all `add`, `edit`, `rmv`, `execTop`&#x20;
+      * SC: $$O(n)$$, only contains active tasks
+  * :thumbsup: Approach 2 - Map+Heap with lazy deletion
+    * [Optimal Answer](https://leetcode.com/problems/design-task-manager/submissions/1918442263).
+      * TC:
+        * &#x20;$$O(logn)$$ for `add`, `edit`,&#x20;
+        * $$O(1)$$ for `rmv`
+        * Amortized $$O(logn)$$ for `execTop`
+      * SC: $$O(n+m)$$, may contain stale tasks in the heap.

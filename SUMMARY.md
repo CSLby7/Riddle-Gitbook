@@ -19,7 +19,7 @@
   * [Graph](algorithm-topics/graph.md)
   * [Bit Manipulation](algorithm-topics/bit-manipulation.md)
   * [Trie](algorithm-topics/trie.md)
-  * [Cache Schedule Mechanism](algorithm-topics/cache-schedule-mechanism.md)
+  * [Cache & Priority Systems](algorithm-topics/cache-schedule-mechanism.md)
   * [Math](algorithm-topics/math.md)
   * [Divide & Conquer](algorithm-topics/divide-and-conquer.md)
   * [Segment Tree](algorithm-topics/segment-tree.md)
