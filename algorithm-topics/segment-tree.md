@@ -22,6 +22,10 @@ icon: list-tree
   * So allocating an array of size **`4 * n`** always guarantees enough space.
 * If the problem asks “Find the smallest index > x".
   * Think: **`TreeSet.higher(x)`** first. _**NOT**_ range sum + binary search
+  * Even if you want to use the segment tree, you must extend the template to support a **“find first index in range satisfying a condition”** operation, instead of doing binary search + multiple range queries—for example, LC 1488.
+    * The node must store enough aggregate info to determine whether the current segment may contain a valid answer (e.g., sum/max/min).
+    * During query, first check feasibility, then descend left-first to locate the smallest valid index.
+    * This keeps each operation `O(logn)` instead of `O(log²n)`.
 
 ## **Typical Questions**
 

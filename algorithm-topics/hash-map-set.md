@@ -165,6 +165,8 @@ icon: map-location-dot
       This is naturally solved by an ordered set (`TreeSet.higher(prev)`), so the segment tree was an over-generalized solution.
   * Approach 1 using Segment Tree:
     * [Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919420536). TC: $$O(n*(logn)^2)$$, SC: $$O(n)$$
-  * :thumbsup: Approach 2 using Tree Set:
+  * Approach 2 using Improved Segment Tree:
+    * [Optimal Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919437151). TC: $$O(n*logn)$$, SC: $$O(n)$$
+  * :thumbsup: Approach 3 using Tree Set:
     * [Optimal Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919425763). TC: $$O(n*logn)$$, SC: $$O(n)$$
 
