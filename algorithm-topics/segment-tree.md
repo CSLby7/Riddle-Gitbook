@@ -20,6 +20,8 @@ icon: list-tree
       ≤ 2L − 1 < 2 * (2n) = 4n
       ```
   * So allocating an array of size **`4 * n`** always guarantees enough space.
+* If the problem asks “Find the smallest index > x".
+  * Think: **`TreeSet.higher(x)`** first. _**NOT**_ range sum + binary search
 
 ## **Typical Questions**
 

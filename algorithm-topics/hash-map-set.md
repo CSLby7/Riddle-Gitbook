@@ -157,4 +157,14 @@ icon: map-location-dot
     * Let n = `basket1.length` = `basket2.length`, and let k = number of distinct values across both baskets.
     * TC: $$O(n+k*logk)$$
     * SC: $$O(k)$$
+* :orange\_circle: LC 1488. Avoid Flood in The City
+  *   I only came up with a segment tree solution based on intuition because I initially modeled the problem as a **range query problem**. However, the real core operation is not “range sum”, but:
+
+      > Find the smallest zero-day index strictly greater than `prev` (successor query).
+
+      This is naturally solved by an ordered set (`TreeSet.higher(prev)`), so the segment tree was an over-generalized solution.
+  * Approach 1 using Segment Tree:
+    * [Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919420536). TC: $$O(n*(logn)^2)$$, SC: $$O(n)$$
+  * :thumbsup: Approach 2 using Tree Set:
+    * [Optimal Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919425763). TC: $$O(n*logn)$$, SC: $$O(n)$$
 
