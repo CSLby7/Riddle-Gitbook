@@ -10,6 +10,24 @@ icon: map-location-dot
 * If the array content is within a specific range, we can use `int[]` to replace `Map`
 * If there are multiple `int[]` and you need to group them, you can convert `int[]` to `String` and use `String` as key in the `HashMap`
 * If the result needs to be **deduped**, a 2/3 pointers solution may be easier to write with **sorting** the input array.
+* Understanding HashMap Time Complexity
+  * > A common question that always arises is: why are hashmap lookups considered $$O(1)$$ in terms of time complexity, even in worst-case scenarios? This seems counterintuitive, especially considering that hash collisions can occur.
+    >
+    > If we use a predetermined hash function, the worst-case time for hashmap operations could indeed be $$O(n)$$. Why? Because someone could craft a set of keys that all hash to the same value, causing a chain of collisions. This would force the lookup to scan through all $$n$$ elements, resulting in $$O(n)$$ time complexity.
+    >
+    > The key to achieving $$O(1)$$ time complexity lies in randomization. Instead of using a fixed hash function like `h(x) = (constant_a . x + constant_b) % constant_prime`, we can use a randomized approach. For example, we might choose random values for the parameters in our hash function each time we initialize our hashmap, such as `h(x) = (random_a . x + random_b) % random_prime`. (This is just one way to construct a hash function; there are many other types you can design.)
+    >
+    > This randomization makes it virtually impossible for someone to predict and exploit the hash function's behavior.
+    >
+    > From a mathematical perspective, when analyzing the "expected runtime" of hashmap operations using a randomized hash function, it averages out to $$O(1)$$. While some individual operations might take longer due to collisions, the overall average remains constant.
+    >
+    > It's crucial to understand that when we say "expected worst-case time is $$O(1)$$", we're referring to the average over all possible random choices of the hash function, for any given input.
+    >
+    > This isn't just theoretical—it’s applied in practice. For instance, Google’s Abseil library randomizes hash functions at the program start. This helps prevent attacks that exploit hash collisions and makes systems more secure. Randomization also ensures that software doesn't become dependent on a specific hash function. Hardcoding a hash function and never changing it makes future updates to improve security or performance challenging.
+    >
+    > This concept illustrates a broader principle in system design: the power of introducing controlled randomness to improve system performance and security. It also relates to Hyrum's Law, which suggests that all observable behaviors of a system will eventually be depended on by somebody. By randomizing hash functions, we prevent dependencies on specific hash behaviors, making systems more robust and flexible.
+    >
+    > Additionally, when we say "expected value," it's not just a random term; it is formally defined, similar to worst-case and average-case scenarios. You can read the definition and understand the concept here in [probability theory: Expected value](https://en.m.wikipedia.org/wiki/Expected_value).
 
 ## Typical Questions (28)
 

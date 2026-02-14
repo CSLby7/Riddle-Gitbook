@@ -32,6 +32,12 @@ Focus:
   * [Optimal Answer](https://leetcode.com/problems/lru-cache/submissions/1472922731).
     * TC: $$O(1)$$ for both `get` and `put`
     * SC: $$O(capacity)$$
+* :orange\_circle: LC 432. All O\`one Data Structure
+  * I only wrote a standard LRU solution. The reason I failed to come up with an O(1) solution
+    * Missing the “only ±1 changes” leverage: Counts only changes by **+1 or -1** each operation. That’s the crucial property that screams “adjacent bucket moves.” If you don’t consciously look for that kind of property, you’ll design a general reordering solution (yours), not a local-move solution (optimal).
+  * [Optimal Answer](https://leetcode.com/problems/all-oone-data-structure/submissions/1918559933).&#x20;
+    * TC: $$O(1)$$ for all methods
+    * SC: $$O(n)$$
 * :star2: :red\_circle: LC 460. LFU Cache
   * Idea
     * Implement with 2 Maps
