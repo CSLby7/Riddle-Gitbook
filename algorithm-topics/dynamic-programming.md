@@ -332,3 +332,8 @@ icon: diagram-successor
 * :orange\_circle: LC 3472. Longest Palindromic Subsequence After at Most K Operations
   * It's a combination of an advanced version of LC 516 + Knapsack ideas
   * [Optimal Answer](https://leetcode.com/problems/longest-palindromic-subsequence-after-at-most-k-operations/submissions/1567570744/). TC: $$O(n*n*k)$$, SC: $$O(n*n*k)$$
+
+#### DP on Tree
+
+* LC 2858. Minimum Edge Reversals So Every Node Is Reachable
+  * [Optimal Answer](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/submissions/1920425023). TC: $$O(n)$$, SC: $$O(n)$$
