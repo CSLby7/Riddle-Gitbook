@@ -66,3 +66,22 @@ icon: spell-check
 * :orange\_circle: LC 3043. Find the Length of the Longest Common Prefix
   * Damn, I should at least realize the HashMap solution. I feel so bad!
   * Approach 1 using HashMap. [Answer](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/submissions/1915490968). TC: $$O(m*logm+n*logn)$$, SC: $$O(m*logm)$$
+* :white\_circle: LC 588. Design In-Memory File System
+  * [Optimal Answer](https://leetcode.com/problems/design-in-memory-file-system/submissions/1921509415).
+    * TC
+      * Let
+        * `p` = length of the path string
+        * `k` = number of **non-empty** components in the path (e.g. `"/a/b/c"` → `k=3`)
+        * `m` = number of children in a directory (size of that directory’s `TreeMap`)
+        * `d` = number of entries in the target directory you list (for `ls` on a directory)
+        * `c` = length of the string you append in this call to `addContentToFile`
+        * `L` = total length of the file content when you call `readContentFromFile`
+      * `ls()`
+        * File: $$O(p+k*log{m})$$
+        * Directory: $$O(p+k*log{m}+d)$$
+      * `mkdir()` : $$O(p+k*log{m})$$
+      * `addContentToFile` : $$O(p+k*log{m}+c)$$
+      * `readContentFromFile` : $$O(p+k*log{m}+L)$$
+    * SC
+      * Let `N` the total number of nodes and `T` be total characters across all files
+      * $$O(N+T)$$
