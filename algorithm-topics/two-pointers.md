@@ -132,7 +132,7 @@ icon: right-left
   * The inner loop uses the sliding window idea.
   * [Optimal Answer](https://leetcode.com/problems/substring-with-concatenation-of-all-words/submissions/1781837472).
     * Given $$n$$ as the length of `s`, $$a$$ as the length of `words`, and $$b$$ as the length of each word:
-      * TC: $$O(a+n*b)$$, SC: $$O(a+b)$$<br>
+      * TC: $$O(a+n*b)$$, SC: $$O(a+b)$$
 * :star2: :red\_circle: LC 76. Minimum Window Substring
   * Common mistake when simply using the normal sliding window idea
     * Pitfall: Cannot simply move the left pointer when the right pointer points to such a `char c` (String t has c with number k, and we already see k times of `c` in the current window). Reason is that **it's possible to have k+1 times of `c` in the final answer window**. For example, s="abbc", t="abc"
@@ -140,6 +140,14 @@ icon: right-left
   * Answer
     * :thumbsup: Approach 1 with core idea above: [Optimal Answer](https://leetcode.com/problems/minimum-window-substring/submissions/1381629522). TC: $$O(n)$$, SC: $$O(1)$$
     * Approach 2 with an alternative idea: [Answer](https://leetcode.com/problems/minimum-window-substring/submissions/1858369183). TC: $$O(n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 2106. Maximum Fruits Harvested After at Most K Steps
+  * Approach 1 with TreeMap (my own solution)
+    * [Answer](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/submissions/1922874694). TC : $$O(nlogn)$$, SC: $$O(n)$$
+  * Approach 2 with Binary Search
+    * Implementation trick: Use `prefixSum[n+1]`, which means `prefix[i]` represents the sum of elements in the half-open range `[0, i)` (i.e., before index `i`).
+    * [Answer](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/submissions/1923997390/). TC: $$O(n+klogn)$$, SC: $$O(n)$$
+  * :thumbsup: Approach 3 with Sliding Window
+    * [Optimal Answer](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/submissions/1926749800/). TC: $$O(n)$$, SC: $$O(1)$$
 
 #### :jigsaw: **Sliding Window with Non-Aggressive Shrinking**
 

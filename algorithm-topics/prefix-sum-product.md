@@ -44,12 +44,6 @@ icon: integral
       > Say, we have a subarray `A[i : j]`(`i != 0`, `j != n`) and the product of elements inside is `P`. Take `P > 0` for example: if `A[i] > 0` or `A[j] > 0`, then obviously, we should extend this subarray to include `A[i]` or `A[j]`; if both `A[i]` and `A[j]` are negative, then extending this subarray to include both `A[i]` and `A[j]` to get a larger product. Repeating this procedure and eventually we will reach the beginning or the end of `A`.
       >
       > What if there are zeroes in the array? Well, we can split the array into several smaller ones. That's to say, when the prefix product is `0`, we start over and compute prefix profuct from the current element instead. And this is exactly what `A[i] *= (A[i - 1]) or 1` does.
-* :orange\_circle: LC 2106. Maximum Fruits Harvested After at Most K Steps
-  * Approach 1 with TreeMap (my own solution)
-    * [Answer](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/submissions/1922874694). TC : $$O(nlogn)$$, SC: $$O(n)$$
-  * Approach 2 with Binary Search
-    * Implementation trick: Use `prefixSum[n+1]`, which means `prefix[i]` represents the sum of elements in the half-open range `[0, i)` (i.e., before index `i`).
-    * [Answer](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/submissions/1923997390/). TC: $$O(n+klogn)$$, SC: $$O(n)$$
 
 ### **Difference Array (Sweep Line Algo)**
 
