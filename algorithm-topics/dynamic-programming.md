@@ -289,6 +289,10 @@ icon: diagram-successor
   * [Optimal Answer](https://leetcode.com/problems/uncrossed-lines/submissions/1761950446/).  TC: $$O(M*N)$$, SC: $$O(min(M,N))$$
 * :orange\_circle: LC 3202. Find the Maximum Length of Valid Subsequence II
   * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/submissions/1909970543). TC: $$O(n*k)$$, SC: $$O(k^2)$$
+* :orange\_circle: LC 898. Bitwise ORs of Subarrays
+  * This problem isn’t about computing every subarray OR (which leads to $$O(n^2)$$), but about realizing that **for each ending index, the number of distinct OR results is bounded (\~32).**
+  * I was enumerating all subarrays (all dp\[i]\[j]), but the real insight is that for each fixed right endpoint j, the number of **distinct OR states** is bounded (\~32), so the optimization comes from compressing the state space rather than scanning all i.
+  * [Optimal Answer](https://leetcode.com/problems/bitwise-ors-of-subarrays/submissions/1927842953). where $$N$$ is the length of `A`, and $$W$$ is the maximum size of elements in `A` , TC: $$O(n*logW)$$, SC: $$O(n*logW)$$
 
 #### :jigsaw: **Edit Distance series**
 
