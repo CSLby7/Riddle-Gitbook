@@ -61,6 +61,11 @@ icon: face-tongue-money
     * [Optimal Answer](https://leetcode.com/problems/increasing-triplet-subsequence/submissions/1463007552). TC: $$O(n)$$, SC: $$O(1)$$
 
     > I would like to point out that for \[1, 3, 0, 5] we will eventually arrive at big = 3 and small = 0 so big may come before small. **However, the solution still works, because big only gets updated when there exists a small that comes before it.**
+* :orange\_circle: LC 680. Valid Palindrome II
+  * Missing the invariant mindset. The key invariant is:
+    * While `l < r` and chars match, you’re still on the “main path”.
+    * The **first mismatch is the only decision point**, and it creates **two** deterministic subproblems (“is substring palindrome?”).
+  * [Optimal Answer](https://leetcode.com/problems/valid-palindrome-ii/submissions/1928095211). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Kadane's Algorithm (2)
 
