@@ -108,6 +108,8 @@ icon: diagram-project
 * :white\_circle: LC 317. Shortest Distance from All Buildings
   * I came up with an answer by myself by missing 1 optimization that I don't need to maintain both `visited` and `globalVisited` matrix.
   * [Optimal Answer](https://leetcode.com/problems/shortest-distance-from-all-buildings/submissions/1882155994).  TC: $$O(m^2*n^2)$$, SC: $$O(m*n)$$
+* LC 827. Making A Large Island
+  * [Optimal Answer](https://leetcode.com/problems/making-a-large-island/submissions/1932443143). TC: $$O(n^2)$$, SC: $$O(n^2)$$
 
 ### :jigsaw: **Dijkstra's Algorithm**
 
