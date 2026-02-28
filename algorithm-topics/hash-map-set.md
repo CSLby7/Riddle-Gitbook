@@ -113,6 +113,8 @@ icon: map-location-dot
     * Try to express the win/answer condition as a **formula**, not a state.
     * Look for **sum / difference / count / max / min / parity**.
   * [Optimal Answer](https://leetcode.com/problems/design-tic-tac-toe/submissions/1911976445). TC: $$O(1)$$, SC: $$O(n)$$
+* :white\_circle: LC 1169. Invalid Transactions
+  * [Optimal Answer](https://leetcode.com/problems/invalid-transactions/submissions/1934087392). TC: $$O(n^2)$$, SC: $$O(n)$$
 
 ### **TreeMap/TreeSet (6)**
 
