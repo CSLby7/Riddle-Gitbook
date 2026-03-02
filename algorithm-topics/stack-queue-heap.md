@@ -260,3 +260,5 @@ icon: shelves
   * [Optimal Answer](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/submissions/1874696731). TC: $$O(k*logk)$$, SC: $$O(k)$$
 * :star2: :red\_circle: LC 407. Trapping Rain Water II
   * Optimal Answer. TC: $$O(m*n*log(m*n))$$, SC: $$O(m*n)$$
+* :white\_circle: LC 2163. Minimum Difference in Sums After Removal of Elements
+  * [Optimal Answer](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/submissions/1934318331). TC: $$O(n*logn)$$, SC: $$O(n)$$
