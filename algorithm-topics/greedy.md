@@ -66,6 +66,8 @@ icon: face-tongue-money
     * While `l < r` and chars match, you’re still on the “main path”.
     * The **first mismatch is the only decision point**, and it creates **two** deterministic subproblems (“is substring palindrome?”).
   * [Optimal Answer](https://leetcode.com/problems/valid-palindrome-ii/submissions/1928095211). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 1975. Maximum Matrix Sum
+  * [Optimal Answer](https://leetcode.com/problems/maximum-matrix-sum/submissions/1935267411). TC: $$O(n^2)$$, SC: $$O(1)$$
 
 ### Kadane's Algorithm (2)
 
