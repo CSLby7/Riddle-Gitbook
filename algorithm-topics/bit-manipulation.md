@@ -70,3 +70,5 @@ icon: binary
   * [Optimal Answer](https://leetcode.com/problems/ip-to-cidr/submissions/1894098305). Assume the output size is $$k$$, TC: $$O(k)$$, SC: $$O(1)$$
 * :orange\_circle: LC 2571. Minimum Operations to Reduce an Integer to 0
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/submissions/1901645947). TC: $$O(logn)$$, SC: $$O(1)$$
+* :orange\_circle: LC 2749. Minimum Operations to Make the Integer Zero
+  * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/submissions/1936298177). TC: $$O(1)$$, SC: $$O(1)$$
