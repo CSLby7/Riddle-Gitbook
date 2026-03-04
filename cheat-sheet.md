@@ -20,7 +20,7 @@ icon: scroll
   * $$(a+b)\%mod=((a\%mod)+(b\%mod))\%mod$$
   * $$(a-b)\%mod=(a-b+mod)\%mod$$
   * Taking the modulus early can sometimes help prevent overflow in problems with huge numbers.
-*   Get the greatest common divisor
+*   Get the greatest common divisor (最大公约数)
 
     ```java
       private int gcd(int x, int y) {
@@ -29,6 +29,36 @@ icon: scroll
           }
           return gcd(y, x%y);
       }
+    ```
+* Get the least common multiple (最小公倍数)
+  * $$lcm(a,b) * gcd(a,b) = a*b ⇒ lcm(a,b) = a/gcd(a,b)*b$$
+  * ```
+    核心原因：质因数分解。把两个数写成质因数形式。
+    例如
+    a = 2^3 * 3^1
+    b = 2^1 * 3^2
+
+    gcd 取较小指数。因为最大公约数要，两边都能整除。所以指数取 min。
+    gcd(a,b) = 2^1 * 3^1
+
+    lcm 取较大指数。因为最小公倍数要 同时包含两个数所有因子。所以指数取 max。
+    lcm(a,b) = 2^3 * 3^2
+
+    gcd * lcm
+    = (2^1 * 3^1) * (2^3 * 3^2)
+    = 2^(1+3) * 3^(1+2)
+    = 2^4 * 3^3
+
+    a*b
+    = (2^3 * 3^1) * (2^1 * 3^2)
+    = 2^(3+1) * 3^(1+2)
+    = 2^4 * 3^3
+
+    补充：如果某个质因数不存在，就认为它的指数是 0。
+    a = 12 = 2^2 * 3^1 = 2^2 * 3^1 * 5^0
+    b = 25 = 5^2       = 2^0 * 3^0 * 5^2
+    gcd = 1
+    lcm = 300
     ```
 * Encode point(x,y), $$0 <= x,y <= 40000$$, to ensure **unique encoding** for all points
   * Encode Result: `40001 * x + y`
