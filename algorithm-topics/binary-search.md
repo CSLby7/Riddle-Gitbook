@@ -7,9 +7,12 @@ icon: magnifying-glass-arrow-right
 
 ## **Notes**
 
-* Binary search is essentially an application of the divide-and-conquer paradigm. This algo is useful when resolving questions like
+* Binary search is essentially an application of the divide-and-conquer paradigm. **Binary search is used to find the boundary where a monotonic predicate changes from false to true (or true to false)**. This algo is useful when resolving questions like
   * Search item in an ordered array
-  * Sqrt related question
+  * Binary search based on answer space: If the answer can be found by enumerating from small to large and the feasibility of a candidate value can be checked efficiently, then binary search on the answer is usually possible.
+    * Sqrt problem
+    * Minimum time problem
+    * Capacity problem
 * Use **close-close range \[l,r] to check array**, the `while` loop condition should be **`while(l<=r)`** because \[l,r] is a valid range.
   * If you want to **memorize it mechanically**, this `while` loop condition applies to **classic binary search** or **finding the first or last occurrence**.
 * Remember to use `long` if necessary
@@ -142,6 +145,8 @@ long midSquare = (long)mid * mid;
   * Be careful about making code concise enough when returning the closest item of the target if there is no match.
   * [Optimal Answer](https://leetcode.com/problems/sqrtx/submissions/1496896428). TC: $$O(logn)$$, SC: $$O(1)$$
 * :orange\_circle: LC 3733. Minimum Time to Complete All Deliveries
+  * Key insight: Do not try to construct the actual schedule; instead, check whether a valid schedule exists.
+  * Reason: Constructing the schedule leads to combinatorial complexity, while feasibility can be verified by counting available time slots.
   * [Optimal Answer](https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/submissions/1937513167). TC: $$O(log_2(d0*r0+d1*r1))$$, SC: $$O(1)$$
 
 ### **Peak Finding (2)**
