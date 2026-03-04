@@ -141,6 +141,8 @@ long midSquare = (long)mid * mid;
   * Avoid overflow using `long`
   * Be careful about making code concise enough when returning the closest item of the target if there is no match.
   * [Optimal Answer](https://leetcode.com/problems/sqrtx/submissions/1496896428). TC: $$O(logn)$$, SC: $$O(1)$$
+* :orange\_circle: LC 3733. Minimum Time to Complete All Deliveries
+  * [Optimal Answer](https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/submissions/1937513167). TC: $$O(log_2(d0*r0+d1*r1))$$, SC: $$O(1)$$
 
 ### **Peak Finding (2)**
 
