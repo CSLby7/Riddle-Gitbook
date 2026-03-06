@@ -86,6 +86,8 @@ icon: timeline
 * :orange\_circle: LC 723. Candy Crush
   * Easy to misunderstand problem statement on when a candy can be crushed.
   * [Optimal Answer](https://leetcode.com/problems/candy-crush/submissions/1888257445). TC: $$O(m^2*n^2)$$, SC: $$O(n)$$
+* LC 1304. Find N Unique Integers Sum up to Zero
+  * [Optimal Answer](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/submissions/1939380125). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### **Boyer-Moore Voting Algorithm**
 
