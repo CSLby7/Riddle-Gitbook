@@ -24,6 +24,8 @@ icon: right-left
   * This question is the same as LC 962
   * Approach 1: Monotonix Stack. TC: $$O(n)$$, SC: $$O(n)$$
   * Approach 2: 2 pointers + `rightMin` array. TC: $$O(n)$$, SC: $$O(n)$$
+* :white\_circle: LC 696. Count Binary Substrings
+  * [Optimal Answer](https://leetcode.com/problems/count-binary-substrings/submissions/1941557061). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Strings Match
 
