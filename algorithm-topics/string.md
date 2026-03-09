@@ -88,3 +88,5 @@ icon: arrow-up-a-z
     * Let $$n$$ be `words.length`, $$k$$ be the average length of a word, and $$m$$ be `maxWidth`
     * TC: $$O(n*k)$$
     * SC: $$O(m)$$
+* LC 412. Fizz Buzz
+  * [Optimal Answer](https://leetcode.com/problems/fizz-buzz/submissions/1942464593). TC: $$O(n)$$, SC: $$O(1)$$
