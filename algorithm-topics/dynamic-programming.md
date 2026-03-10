@@ -78,6 +78,14 @@ icon: diagram-successor
   * The definition of this dp array and how to do state transition is tricky.
   * [Optimal Answer](https://leetcode.com/problems/number-of-people-aware-of-a-secret/submissions/1914353991). TC: $$O(n)$$, SC: $$O(n)$$
 
+### Pattern Counting
+
+* Notes
+  * Group configurations into a few pattern types instead of enumerating all possibilities.
+  * Let each pattern type be a DP state representing how many ways it can appear.
+* :orange\_circle: LC 1411. Number of Ways to Paint N × 3 Grid
+  * [Optimal Answer](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/submissions/1943508321). TC: $$O(n)$$, SC: $$O(1)$$
+
 ### 2D Matrix Problems
 
 * LC 62. Unique Paths
