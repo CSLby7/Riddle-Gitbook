@@ -39,6 +39,13 @@ icon: shelves
 
 ### **Normal Stack Common Use Cases (8)**
 
+* Notes
+  * Common cases
+    * Matching / Pairing: resolve parentheses or symbols
+    * Adjacent Merge / Reduction: repeatedly merge/remove neighbors based on a rule
+    * Expression Evaluation: operators, precedence, calculators
+    * Nested Structure Parsing: decode nested patterns
+    * State Backtracking: undo previous state (path/string)
 * LC 20. Valid Parentheses
   * The most elegant way is to push `) or ] or ]` when get `( or [ or {`. This way can simplify `if/else` logic
   * [Optimal Answer](https://leetcode.com/problems/valid-parentheses/submissions/1478181301). TC: $$O(n)$$, SC: $$O(n)$$
@@ -77,6 +84,8 @@ icon: shelves
     * &#x20;[Answer](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/submissions/1881029665). TC: $$O(n^2)$$, SC: $$O(n)$$.&#x20;
       * For TC, it's slow due to repeated string copying when merging nested builders. Conceptually, the process resembles: `b1.append(b2.append(...append(bk)...));` where deeply nested parentheses cause the same characters to be copied multiple times.
   * :thumbsup: Approach 2: [Optimal Answer](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/submissions/1881049714). TC: $$O(n$$), SC: $$O(n)$$
+* LC 2197. Replace Non-Coprime Numbers in Array
+  * [Optimal Answer](https://leetcode.com/problems/replace-non-coprime-numbers-in-array/submissions/1944390135).  TC: $$O(nlogMax)$$, SC: $$O(n)$$
 
 ### **Normal Queue Common Use Cases (3)**
 
