@@ -121,9 +121,20 @@ icon: map-location-dot
 * Notes
   * Use cases
     * `TreeMap`is useful for maintaining a **dynamically sorted** collection of elements, especially when the **collection is frequently updated with new elements being added and old elements being removed**.
-    * For each element in an array, `TreeMap` can be used for finding the following 2 requirements by adding array items to map from the end of the array.
-      * the smallest element larger than the current element in elements after the current element
-      * the largest element smaller than the current element in elements after the current element
+    * Typical queries include:
+      * Next greater / next smaller element
+        * smallest element **≥ target** → `ceiling()`
+        * largest element **≤ target** → `floor()`
+        * smallest element **> target** → `higher()`
+        * largest element **< target** → `lower()`
+      * **Closest** value to target ⭐ (very common)
+        * Check both:
+          * `floor(target)`
+          * `ceiling(target)`
+        * Choose the one with the smaller difference
+        * Pattern: **nearest neighbor search in ordered set**
+  * Maintaining the candidate set
+    * **Dynamic** ordered set with sliding window/prefix range. Maintain a set of **valid candidates.** Then perform ordered queries on the set: nearest/predecessor/successor
 * :orange\_circle: LC 1825. Finding MK Average
   * [Optimal Answer](https://leetcode.com/problems/finding-mk-average/submissions/1491003004)
     * `addElement(int num)`: TC $$O(log{n})$$, SC: $$O(n)$$, where $$n$$ is the number of unique elements in the map.
@@ -171,4 +182,5 @@ icon: map-location-dot
     * [Optimal Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919437151). TC: $$O(n*logn)$$, SC: $$O(n)$$
   * :thumbsup: Approach 3 using Tree Set:
     * [Optimal Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919425763). TC: $$O(n*logn)$$, SC: $$O(n)$$
-
+* LC 2817. Minimum Absolute Difference Between Elements With Constraint
+  * [Optimal Answer](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/submissions/1944503743). TC: $$O(nlogn)$$, SC: $$O(n)$$
