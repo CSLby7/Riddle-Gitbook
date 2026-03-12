@@ -115,6 +115,14 @@ icon: map-location-dot
   * [Optimal Answer](https://leetcode.com/problems/design-tic-tac-toe/submissions/1911976445). TC: $$O(1)$$, SC: $$O(n)$$
 * :white\_circle: LC 1169. Invalid Transactions
   * [Optimal Answer](https://leetcode.com/problems/invalid-transactions/submissions/1934087392). TC: $$O(n^2)$$, SC: $$O(n)$$
+* :orange\_circle: LC 3583. Count Special Triplets
+  * I only came up with Approach 1 by myself, but it's unnecessarily complicated.
+  * Core lesson learned: I realized frequency counting could help, but I got stuck because I could only easily obtain the **left frequency**. The key insight is that we can maintain **TWO maps** — a total frequency map and a prefix map — so the right frequency can be derived as\
+    `right = total - prefix`.
+  * Approach 1: Binary Search + 1 Map
+    * [Answer](https://leetcode.com/problems/count-special-triplets/submissions/1945629590). TC: $$O(nlogn)$$, SC: $$O(n)$$
+  * :thumbsup: Approach 2: 2 Maps
+    * [Optimal Answer](https://leetcode.com/problems/count-special-triplets/submissions/1945634679). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **TreeMap/TreeSet (6)**
 
