@@ -81,6 +81,8 @@ icon: face-tongue-money
     * Case 2: Result across 2 arrays.
   * Approach 1 using Kadane's Algorithm + prefixSum: [Answer](https://leetcode.com/problems/maximum-sum-circular-subarray/submissions/1869828180). TC: $$O(n)$$, SC: $$O(n)$$
   * :thumbsup: Approach 2 using Kadane's Algorithm purely: [Optimal Answer](https://leetcode.com/problems/maximum-sum-circular-subarray/submissions/1869832629). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 3147. Taking Maximum Energy From the Mystic Dungeon
+  * [Optimal Answer](https://leetcode.com/problems/taking-maximum-energy-from-the-mystic-dungeon/submissions/1946604976). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### **Split-and-Solve Dual Requirements (3)**
 
