@@ -196,6 +196,9 @@ icon: diagram-successor
 * :orange\_circle: LC 337. House Robber III
   * Tree DP. I have most of the main idea, but it's easy to make mistakes in the case where the current node is not being robbed.
   * [Optimal Answer](https://leetcode.com/problems/house-robber-iii/submissions/1453965715/). TC: $$O(n)$$, SC: $$O(h)$$
+* :white\_circle: LC 3186. Maximum Total Damage With Spell Casting
+  * House Robber Variant: conflict defined by value distance instead of index adjacency. Need to find the last compatible state.
+  * TC: $$O(nlogn)$$, SC: $$O(n)$$
 
 ### :jigsaw: **Stock Problems**
 
