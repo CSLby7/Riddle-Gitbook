@@ -160,6 +160,8 @@ icon: timeline
     * TC: $$O(N+P)$$, SC: $$O(N)$$
 * LC 1762. Buildings With an Ocean View
   * [Optimal Answer](https://leetcode.com/problems/buildings-with-an-ocean-view/submissions/1898289650). TC: $$O(N)$$, SC: $$O(N)$$
+* :white\_circle: LC 3349. Adjacent Increasing Subarrays Detection I
+  * [Optimal Answer](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/submissions/1951689039). TC: $$O(N)$$, SC: $$O(1)$$
 
 ### Simulation
 

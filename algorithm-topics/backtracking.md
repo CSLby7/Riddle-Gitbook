@@ -192,3 +192,26 @@ private void backtracking(parameters) {
       > It also a joke to expect someone come's up with an Eularian path finding algo without knowing it (which is the efficient algo for this type of problem). BTW, also don't read some of the "smart" solutions here that just copy the above algorithm and claims it is "just dfs" (although the code might look deceptively simple), these people have no idea why it works just pretend they have.
 * :red\_circle: LC 679. 24 Game
   * [Optimal Answer](https://leetcode.com/problems/24-game/submissions/1906211998/). TC: $$O(n^3*n!*(n-1)!*3^{n-1})$$, SC: $$O(n^2)$$
+* :red\_circle: LC 465. Optimal Account Balancing
+  * > Key Insight
+    >
+    >
+    >
+    > Let n be the number of people with non-zero balances.&#x20;
+    >
+    >
+    >
+    > The optimal number of transactions is at most n−1, but this is not a tight bound for all cases. To understand it, think about selecting one person as a pivot and settling all others against it. Since the total balance is zero, the pivot will be automatically settled at the end. Therefore, the optimal number of transactions is always ≤ n−1.
+    >
+    >
+    >
+    > The minimum number of transactions is not always n−1; that is only a lower bound. The problem can be reframed as _**partitioning these balances into disjoint groups such that each group sums to zero**_. For a group of size k, at least k−1 transactions are required. Therefore, the total number of transactions equals:
+    >
+    > &#x20;                                               ∑(k−1) ⇒ n−g
+    >
+    > where g is the number of zero-sum groups.
+    >
+    > Thus, the problem reduces to **maximizing the number of zero-sum groups**.
+    >
+    > The DFS solution effectively enumerates all possible ways to merge balances (i.e., all possible groupings), and selects the one that produces the maximum number of zero-sum groups, which guarantees the minimum number of transactions.
+  * [Answer](https://leetcode.com/problems/optimal-account-balancing/submissions/1950704428). TC: $$O((n-1)!)$$, SC: $$O(n)$$
