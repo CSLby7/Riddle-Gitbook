@@ -123,6 +123,10 @@ icon: map-location-dot
     * [Answer](https://leetcode.com/problems/count-special-triplets/submissions/1945629590). TC: $$O(nlogn)$$, SC: $$O(n)$$
   * :thumbsup: Approach 2: 2 Maps
     * [Optimal Answer](https://leetcode.com/problems/count-special-triplets/submissions/1945634679). TC: $$O(n)$$, SC: $$O(n)$$
+* LC 1396. Design Underground System
+  * [Optimal Answer](https://leetcode.com/problems/design-underground-system/submissions/1955041796).
+    * TC: $$O(1)$$ for all functions
+    * SC: $$O(P+S^2)$$, where $$S$$ is the number of stations on the network, and $$P$$ is the number of passengers making a journey concurrently during peak time.
 
 ### **TreeMap/TreeSet (6)**
 
