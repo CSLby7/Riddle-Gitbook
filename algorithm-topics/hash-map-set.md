@@ -127,6 +127,10 @@ icon: map-location-dot
   * [Optimal Answer](https://leetcode.com/problems/design-underground-system/submissions/1955041796).
     * TC: $$O(1)$$ for all functions
     * SC: $$O(P+S^2)$$, where $$S$$ is the number of stations on the network, and $$P$$ is the number of passengers making a journey concurrently during peak time.
+* :white\_circle: LC 3531. Count Covered Buildings
+  * I mistakenly used TreeSet to address this problem. Although this can work but it's not optimal answer. TreeSet is for neighbor search (this is just a **PLAIN** translation of the question). However, the problem only requires checking **existence**, not finding actual neighbors.\
+    This can be simplified to a **boundary check**: a building is covered if it is strictly between the min and max in its row and column. So instead of maintaining a full ordered set, we **ONLY** need to track **min/max per row and column**, reducing both complexity and overhead.
+  * [Optimal Answer](https://leetcode.com/problems/count-covered-buildings/submissions/1955173800). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **TreeMap/TreeSet (6)**
 
@@ -147,6 +151,10 @@ icon: map-location-dot
         * Pattern: **nearest neighbor search in ordered set**
   * Maintaining the candidate set
     * **Dynamic** ordered set with sliding window/prefix range. Maintain a set of **valid candidates.** Then perform ordered queries on the set: nearest/predecessor/successor
+  * When **NOT** to use TreeSet
+    * If only checking **existence** (e.g. `lower()/higher() != null`)&#x20;
+      * → consider reducing it to use **min/max boundary** instead.
+      * This way can reduce the TreeSet $$O(logn)$$ `get` operation to the $$O(1)$$ check using boundaries.
 * :orange\_circle: LC 1825. Finding MK Average
   * [Optimal Answer](https://leetcode.com/problems/finding-mk-average/submissions/1491003004)
     * `addElement(int num)`: TC $$O(log{n})$$, SC: $$O(n)$$, where $$n$$ is the number of unique elements in the map.
