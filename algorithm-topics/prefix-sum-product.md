@@ -45,6 +45,37 @@ icon: integral
       >
       > What if there are zeroes in the array? Well, we can split the array into several smaller ones. That's to say, when the prefix product is `0`, we start over and compute prefix profuct from the current element instead. And this is exactly what `A[i] *= (A[i - 1]) or 1` does.
 
+### **2D Prefix Sum**
+
+* Notes
+  * <pre><code>Let the size of the two-dimensional array A be m × n.
+    The array P (size is (m+1)*(n+1)) is the prefix sum array of A, where each element P[i][j] is defined as follows:
+    <strong>  - If both i and j are greater than 0, then P[i][j] represents the sum of all elements in the rectangular region of A with the top-left corner at A[0,0] and the bottom-right corner at A[i-1,j-1].
+    </strong>  - If either i or j is equal to 0, then P[i][j] = 0.
+    The prefix sum array P allows us to compute the sum of elements in any rectangular submatrix in O(1) time. 
+    Specifically, if the top-left corner of the rectangle is (x1, y1) and the bottom-right corner is (x2, y2), then the sum of elements in this region is:
+
+    sum = A[x1..x2][y1..y2]
+        = P[x2][y2] - P[x1 - 1][y2] - P[x2][y1 - 1] + P[x1 - 1][y1 - 1]
+        
+    How can we obtain the array P?
+
+    Considering the 1 × 1 rectangle ending at (i, j), we can write:
+    A[i][j] = P[i][j] - P[i-1][j] - P[i][j-1] + P[i-1][j-1]
+
+    Since A[i][j], P[i-1][j], P[i][j-1], and P[i-1][j-1] are all known at this point, we can rearrange the equation to obtain:
+    P[i][j] = P[i-1][j] + P[i][j-1] - P[i-1][j-1] + A[i][j]
+
+    Each value of P[i][j] is computed in O(1) time.
+    Therefore, the entire prefix sum array P can be constructed in O(MN) time.
+    After this preprocessing step, the sum of any rectangular region can be queried in constant time.
+    </code></pre>
+* :orange\_circle: LC 1292. Maximum Side Length of a Square with Sum Less than or Equal to Threshold
+  * Approach 1: 2D Prefix Sum + Binary Search
+    * [Answer](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/submissions/1956364536). TC: $$O(m*n*log(min(m,n)))$$, SC: $$O(m*n)$$
+  * :thumbsup: Approach 2: 2D Prefix Sum + Enumeration
+    * [Optimal Answer](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/submissions/1957351872). TC: $$O(m*n)$$, SC: $$O(m*n)$$
+
 ### **Difference Array (Sweep Line Algo)**
 
 * Notes:
