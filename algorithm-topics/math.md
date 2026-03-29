@@ -86,6 +86,14 @@ icon: calculator-simple
   * **English Number Grouping Rule:** English uses a **base-1000 grouping system** when reading and writing large numbers. Digits are grouped every three places: **thousand (10³), million (10⁶), billion (10⁹), trillion (10¹²)**. This differs from Chinese, which groups numbers by **10,000 (万)**. For example, 10,000 is read as _ten thousand_ in English, and 100,000,000 (一亿) is _one hundred million_.
   * [Optimal Answer](https://leetcode.com/problems/integer-to-english-words/submissions/1904898924). TC: $$O(log_{10}n)$$, SC: $$O(1)$$
 
+### Enumeration / Brute Force
+
+* LC 2048. Next Greater Numerically Balanced Number
+  * [Optimal Answer](https://leetcode.com/problems/next-greater-numerically-balanced-number/submissions/1963232095).&#x20;
+    * Let $$C=1224444$$ be the largest possible numerically balanced number based on the given constraints.
+    * TC: $$O(C−n)$$.
+    * SC: $$O(1)$$.
+
 ### Geometry
 
 * :orange\_circle: LC 939. Minimum Area Rectangle
