@@ -88,6 +88,8 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/candy-crush/submissions/1888257445). TC: $$O(m^2*n^2)$$, SC: $$O(n)$$
 * LC 1304. Find N Unique Integers Sum up to Zero
   * [Optimal Answer](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/submissions/1939380125). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 840. Magic Squares In Grid
+  * [Optimal Answer](https://leetcode.com/problems/magic-squares-in-grid/submissions/1962489243). TC: $$O(m*n)$$, SC: $$O(1)$$
 
 ### **Boyer-Moore Voting Algorithm**
 

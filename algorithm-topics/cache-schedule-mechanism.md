@@ -57,3 +57,7 @@ Focus:
         * $$O(1)$$ for `rmv`
         * Amortized $$O(logn)$$ for `execTop`
       * SC: $$O(n+m)$$, may contain stale tasks in the heap.
+* LC 716. Max Stack
+  * [Optimal Answer](https://leetcode.com/problems/max-stack/submissions/1962252924).
+    * TC: $$O(1)$$ for `top` , $$O(logn)$$ for others
+    * SC: $$O(n)$$
