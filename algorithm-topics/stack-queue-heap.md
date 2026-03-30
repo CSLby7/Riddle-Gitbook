@@ -52,6 +52,8 @@ icon: shelves
 * LC 1047. Remove All Adjacent Duplicates In String
   * Approach 1: Use a stack, the most straightforward way
   * :thumbsup: Approach 2: Use 2 pointers, this way is better due to no space usage for the stack
+* :white\_circle: LC 1209. Remove All Adjacent Duplicates in String II
+  * [Optimal Answer](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/submissions/1963321853). TC: $$O(n)$$, SC: $$O(n)$$
 * LC 150. Evaluate Reverse Polish Notation
 * :white\_circle: LC 71. Simplify Path
   * [Optimal Answer](https://leetcode.com/problems/simplify-path/submissions/1559607285). TC: $$O(n)$$, SC: $$O(n)$$
