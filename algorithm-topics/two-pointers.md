@@ -48,6 +48,8 @@ icon: right-left
 * LC 16. 3Sum Closest
   * It's similar to LC 15 and easier than it.
   * [Optimal Answer](https://leetcode.com/problems/3sum-closest/submissions/1492794642). TC: $$O(n^2)$$, SC: $$O(1)$$
+* LC 1925. Count Square Sum Triples
+  * [Optimal Answer](https://leetcode.com/problems/count-square-sum-triples/submissions/1964465799). TC: $$O(n^2)$$, SC: $$O(1)$$
 *   LC 11. Container With Most Water
 
     * This is a two-pointer problem (variant of LC 167), but it is easily mistaken for a monotonic stack solution.
