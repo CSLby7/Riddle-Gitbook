@@ -69,6 +69,17 @@ icon: face-tongue-money
 * :white\_circle: LC 1975. Maximum Matrix Sum
   * [Optimal Answer](https://leetcode.com/problems/maximum-matrix-sum/submissions/1935267411). TC: $$O(n^2)$$, SC: $$O(1)$$
 
+### Resource Balancing
+
+* :orange\_circle: LC 2141. Maximum Running Time of N Computers
+  * Kind of tricky. The hard part is not the implementation, but realizing this is a resource balancing/leveling problem rather than a simulation problem.
+  * Approach 1 using Binary Search:
+    * For a target running time t, each battery can contribute at most min(battery\[i], t), so check whether sum(min(battery\[i], t)) >= (long) n \* t.
+    * [Answer](https://leetcode.com/problems/maximum-running-time-of-n-computers/submissions/1965428956). TC: $$O(mlogS)$$, SC: $$O(1)$$
+  * :thumbsup: Approach 2 using Greedy Leveling
+    * Sort batteries. Treat the smallest m-n batteries as extra power, and the largest n batteries as the initial live batteries for n computers. Then use the extra power to level up the smaller live batteries step by step.
+    * [Optimal Answer](https://leetcode.com/problems/maximum-running-time-of-n-computers/submissions/1965399422). TC: $$O(m*logm)$$, SC: $$O(logm)$$
+
 ### Kadane's Algorithm (2)
 
 * LC 53. Maximum Subarray
