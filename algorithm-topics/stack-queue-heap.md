@@ -103,6 +103,8 @@ icon: shelves
   * Optimal Answer.&#x20;
     * TC: Both `hit()` and `getHits()`: amortized $$O(1)$$
     * SC: O(1). Max 300 items in the queue.
+* :white\_circle: LC 2534. Time Taken to Cross the Door
+  * [Optimal Answer](https://leetcode.com/problems/time-taken-to-cross-the-door/submissions/1970710899). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **Monotonic Queue (1)**
 
