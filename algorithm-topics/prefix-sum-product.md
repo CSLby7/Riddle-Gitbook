@@ -46,6 +46,9 @@ icon: integral
       > What if there are zeroes in the array? Well, we can split the array into several smaller ones. That's to say, when the prefix product is `0`, we start over and compute prefix profuct from the current element instead. And this is exactly what `A[i] *= (A[i - 1]) or 1` does.
 * :orange\_circle: LC 3354. Make Array Elements Equal to Zero
   * [Optimal Answer](https://leetcode.com/problems/make-array-elements-equal-to-zero/submissions/1964434587). TC: $$O(n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 3347. Maximum Frequency of an Element After Performing Operations II
+  * I made it by myself!
+  * [Optimal Answer](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/submissions/1972008991). TC: $$O(n*logn)$$, SC: $$O(1)$$
 
 ### **2D Prefix Sum**
 
