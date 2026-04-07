@@ -49,6 +49,8 @@ icon: integral
 * :orange\_circle: LC 3347. Maximum Frequency of an Element After Performing Operations II
   * I made it by myself!
   * [Optimal Answer](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/submissions/1972008991). TC: $$O(n*logn)$$, SC: $$O(1)$$
+* :white\_circle: LC 1895. Largest Magic Square
+  * [Optimal Answer](https://leetcode.com/problems/largest-magic-square/submissions/1972034894). TC: $$O(m*n*{min(m,n)}^2)$$. SC: $$O(m*n)$$
 
 ### **2D Prefix Sum**
 
