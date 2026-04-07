@@ -117,6 +117,12 @@ long midSquare = (long)mid * mid;
   * Approach 1: Do a binary search for rows first and then for columns.
   * Approach 2: Treat 2D matric as a 1D array and then do a binary search.
     * [Optimal Answer](https://leetcode.com/problems/search-a-2d-matrix/submissions/1497798125). TC: $$O(log{m*n})$$, SC: $$O(1)$$
+* LC 981. Time Based Key-Value Store
+  * [Optimal Answer](https://leetcode.com/problems/time-based-key-value-store/submissions/1972043841).
+  * TC
+    * `set`: $$O(1)$$
+    * `get`: $$O(logm)$$ where m is the length of list for a specific key in map.
+  * SC: $$O(n)$$, n is the total number of inserted key-value pairs.
 
 ### **Binary Search for Bounds (5)**
 
