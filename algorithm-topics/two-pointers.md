@@ -94,6 +94,8 @@ icon: right-left
 * :white\_circle: LC 3350. Adjacent Increasing Subarrays Detection II
   * [My Answer](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/submissions/1534325693). TC:  $$O(n)$$ with multiple passes, SC: $$O(n)$$
   * [Optimal Answer](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/solutions/6028753/java-c-python-one-pass-o-1-space). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 1695. Maximum Erasure Value
+  * [Optimal Answer](https://leetcode.com/problems/maximum-erasure-value/submissions/1973867371). TC: $$O(n)$$, SC: $$O(m)$$
 
 ### **Sliding Window - Subarray/Substring Search Meeting With Requirements**
 
