@@ -153,3 +153,6 @@ icon: face-tongue-money
   * [Optimal Answer](https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/submissions/1543365975). TC: $$O(n)$$, SC: $$O(n)$$
 * :white\_circle: LC 228. Summary Ranges
   * [Optimal Answer](https://leetcode.com/problems/summary-ranges/submissions/1786805996). TC: $$O(n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 2054. Two Best Non-Overlapping Events
+  * I came up with the final solution by myself, but this is after 2 failed attempts and took around 40 minutes in total, including all attempts.
+  * [Optimal Answer](https://leetcode.com/problems/two-best-non-overlapping-events/submissions/1974842292). TC: $$O(n*logn)$$, SC: $$O(n)$$
