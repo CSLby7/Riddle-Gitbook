@@ -62,6 +62,10 @@ icon: right-left
 * :white\_circle: LC 88. Merge Sorted Array
   * It’s easy to overlook that the for loop can be **exited early**.
   * [Optimal Answer](https://leetcode.com/problems/merge-sorted-array/submissions/1473979015). TC: $$O(m+n)$$, SC: $$O(1)$$
+* :white\_circle: LC 1570. Dot Product of Two Sparse Vectors
+  * [Optimal Answer](https://leetcode.com/problems/dot-product-of-two-sparse-vectors/submissions/1975054684).&#x20;
+  * Let $$n$$ be the length of the input array and $$L$$ be the number of non-zero elements for the vector.
+  * TC: $$O(n)$$, SC: $$O(L)$$
 
 ### **Delete/Overwrite Elements**
 
