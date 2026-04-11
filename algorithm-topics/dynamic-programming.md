@@ -77,6 +77,19 @@ icon: diagram-successor
   * I came up with an n^2 solution, but that's not good enough.
   * The definition of this dp array and how to do state transition is tricky.
   * [Optimal Answer](https://leetcode.com/problems/number-of-people-aware-of-a-secret/submissions/1914353991). TC: $$O(n)$$, SC: $$O(n)$$
+* :orange\_circle: LC 1653. Minimum Deletions to Make String Balanced
+  * I came up with approach 1 by myself, but it requires 2 passes.
+  * Approach 1 using prefix counting
+    * State: Split point `i`&#x20;
+    * Invariant: For any split point `i`, left side → delete all `'b'`, right side → delete all `'a'`&#x20;
+    * Transition: Move split point from left → right
+    * [Answer](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/submissions/1975611802). TC: $$O(n)$$, SC: $$O(1)$$
+  * :thumbsup: Approach 2 using DP
+    * State: Minimum deletions to make the prefix subarray balanced
+    * Invariant: The prefix is always **optimally balanced.** At every index `i`: prev = minimum deletions to make s\[0..i] balance
+    * Transition:
+      * If a new char is `'b'`, no violation because prefix is alway valid (end with b)
+      * If a new char is `'a'`, made a decision (delete this `'a'` or all previous `'b'`) to maintain min cost
 
 ### Pattern Counting
 
