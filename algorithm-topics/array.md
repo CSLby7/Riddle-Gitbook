@@ -116,6 +116,9 @@ icon: timeline
     * 2 ideas by scanning citation counts (`c`) from highest to lowest and keep a running total of how many papers (`papers`) have at least that many citations
       * :x: 1. Use `papers`:  Find the last `papers` which `papers` < c. This can be a result candidate, but may not be the best result. For example, if the input is \[3, 2, 2], this idea will return 1 as a result, but the real result is 2.
       * :white\_check\_mark: 2. Use `c`:  Find the first `c` which `papers` ≥ `c`. C-based method works because `c` is exactly the value that must satisfy the H-index definition. `papers` is only used to verify it, not to produce the H-index value.
+* LC 1200. Minimum Absolute Difference
+  * Also consider counting/bucket approaches when the value range is small.
+  * [Optimal Answer](https://leetcode.com/problems/minimum-absolute-difference/submissions/1976600387). TC: $$O(nlogn)$$, SC: $$O(logn)$$
 
 ### **DNF algorithm**
 
