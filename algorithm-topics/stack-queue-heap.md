@@ -170,6 +170,12 @@ icon: shelves
   * Try to do it using only 1 stack.
   * [Optimal Answer](https://leetcode.com/problems/min-stack/submissions/1596981364). TC: $$O(1)$$ for each operation. SC: $$O(n)$$
 * LC 3542. Minimum Operations to Convert All Elements to Zero
+  * Key mental leap:&#x20;
+    * Each operation eliminates all occurrences of a specific value within a contiguous region where no smaller value intervenes&#x20;
+    * → a smaller value acts as a barrier that splits the same value into separate regions, each requiring its own operation
+    * → so we maintain a strictly increasing stack of active segments, where each push is one operation.
+  * Invariant: At any point during the left-to-right scan, the stack holds a strictly increasing sequence of distinct non-zero values, representing the "active layers" that\
+    still need separate operations to eliminate.
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/submissions/1977774798). TC: $$O(n)$$, SC: $$O(n)$$
 
 #### **Trapping Rain Water Problems**
