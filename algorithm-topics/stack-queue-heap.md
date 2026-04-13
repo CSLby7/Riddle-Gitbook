@@ -169,6 +169,8 @@ icon: shelves
   * You can do the implementation with the `Stack` data structure.
   * Try to do it using only 1 stack.
   * [Optimal Answer](https://leetcode.com/problems/min-stack/submissions/1596981364). TC: $$O(1)$$ for each operation. SC: $$O(n)$$
+* LC 3542. Minimum Operations to Convert All Elements to Zero
+  * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/submissions/1977774798). TC: $$O(n)$$, SC: $$O(n)$$
 
 #### **Trapping Rain Water Problems**
 
