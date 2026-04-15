@@ -68,6 +68,14 @@ icon: face-tongue-money
   * [Optimal Answer](https://leetcode.com/problems/valid-palindrome-ii/submissions/1928095211). TC: $$O(n)$$, SC: $$O(1)$$
 * :white\_circle: LC 1975. Maximum Matrix Sum
   * [Optimal Answer](https://leetcode.com/problems/maximum-matrix-sum/submissions/1935267411). TC: $$O(n^2)$$, SC: $$O(1)$$
+* LC 3228. Maximum Number of Operations to Move Ones to the End
+  * Mind Leap
+    * To maximize operations, we may think of always moving the leftmost `1` first (intuition)
+    * → But the order of moves does not matter; the problem reduces to counting how many times `1`s cross `0`s
+    * → Consecutive `0`s can be treated as a single zero block
+    * → Each time we encounter a new zero block, all previous `1`s contribute once. Therefore, when a new zero block starts, add the number of `1`s seen so far
+  * Invariant: When a new zero block starts, all previously seen `1`s contribute exactly once, and we account for it immediately.
+  * [Optimal Answer](https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/submissions/1979589119). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Resource Balancing
 
