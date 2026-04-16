@@ -222,10 +222,19 @@ icon: shelves
     * I'm still not sure why reversing the array is more efficient.
   * [Optimal Answer](https://leetcode.com/problems/count-non-decreasing-subarrays-after-k-operations/submissions/1527954906/?envType=company\&envId=google\&favoriteSlug=google-three-months). TC: $$O(n)$$, SC: $$O(n)$$
 
-### **Max/Min Heap Common Use Cases (11)**
+### **Heap**&#x20;
 
 * Notes
-  * Whenever you see that you need to choose the **k smallest or the k largest** among a group of numbers always consider using a heap(priority queue).
+  * Whenever you see that you need to choose the **k smallest or the k largest** among a group of numbers, always consider using a heap(priority queue).
+
+#### **Lazy Update Heap Problems**
+
+* Notes: Use lazy update in a heap when you need to repeatedly extract the min/max, but elements’ priorities can **change due to updates** (e.g., merge, delete, or value change), and the heap does NOT support efficient in-place updates. Instead of modifying existing entries, push new ones and treat old entries as stale, then validate and discard them when they are popped.
+* :orange\_circle: LC 3510. Minimum Pair Removal to Sort Array II
+  * [Optimal Answer](https://leetcode.com/problems/minimum-pair-removal-to-sort-array-ii/submissions/1979686177/). TC: $$O(nlogn)$$, SC: $$O(n)$$
+
+#### **Common Heap Problems**
+
 * :star2: LC 347. Top K Frequent Elements
   * Learn how to initialize `PriorityQueue` with a custom `Comparator`
   * [MinHeap Answer](https://leetcode.com/problems/top-k-frequent-elements/submissions/1722376209/): TC $$O(n*log{k})$$, SC: $$O(n+k)$$
