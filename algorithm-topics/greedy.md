@@ -76,6 +76,14 @@ icon: face-tongue-money
     * → Each time we encounter a new zero block, all previous `1`s contribute once. Therefore, when a new zero block starts, add the number of `1`s seen so far
   * Invariant: When a new zero block starts, all previously seen `1`s contribute exactly once, and we account for it immediately.
   * [Optimal Answer](https://leetcode.com/problems/maximum-number-of-operations-to-move-ones-to-the-end/submissions/1979589119). TC: $$O(n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 277. Find the Celebrity
+  * **Mind Leap**
+    * A single comparison between two people always eliminates one of them
+    * → Therefore, there is no need to maintain the full set of candidates
+    * → We only need to keep track of the current survivor (`candidate`)
+    * → After the scan, perform a full validation pass
+  * **Invariant:** At index `i`, `candidate` is the only person in `[0..i]` who can still possibly be the celebrity
+  * [Optimal Answer](https://leetcode.com/problems/find-the-celebrity/submissions/1981274409). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Resource Balancing
 
