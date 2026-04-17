@@ -82,6 +82,9 @@ icon: tree-christmas
   * [Optimal Answer](https://leetcode.com/problems/nested-list-weight-sum/submissions/1885442851). TC: $$O(n)$$, SC: $$O(n)$$
 * LC 314. Binary Tree Vertical Order Traversal
   * [Optimal Answer](https://leetcode.com/problems/binary-tree-vertical-order-traversal/submissions/1887403024). TC: $$O(n)$$, SC: $$O(n)$$
+* :orange\_circle: LC 364. Nested List Weight Sum II
+  * When you encounter a mathematical formula, don’t rush to compute it directly. First, try to understand whether it can be interpreted from a different perspective. Reframing the formula may allow you to design a process that naturally produces the result, which is often simpler and more efficient than direct computation.
+  * [Optimal Answer](https://leetcode.com/problems/nested-list-weight-sum-ii/submissions/1980626829). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **Tree Manipulation (3)**
 
