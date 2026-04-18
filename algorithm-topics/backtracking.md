@@ -168,6 +168,8 @@ private void backtracking(parameters) {
 * :orange\_circle: LC 37. Sudoku Solver
   * I come up with a solution which is different from 代码随想录. The main difference is that each level directly checks the position that needs to be visited as the next one instead of doing a traversal from `board[0][0]`.
   * Time complexity: $$9^{81}$$ in the worst case
+* :white\_circle: LC 489. Robot Room Cleaner
+  * [Optimal Answer](https://leetcode.com/problems/robot-room-cleaner/submissions/1982103569). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **Structured Generation with Constraints**
 
