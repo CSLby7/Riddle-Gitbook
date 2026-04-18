@@ -86,6 +86,21 @@ icon: calculator-simple
   * **English Number Grouping Rule:** English uses a **base-1000 grouping system** when reading and writing large numbers. Digits are grouped every three places: **thousand (10³), million (10⁶), billion (10⁹), trillion (10¹²)**. This differs from Chinese, which groups numbers by **10,000 (万)**. For example, 10,000 is read as _ten thousand_ in English, and 100,000,000 (一亿) is _one hundred million_.
   * [Optimal Answer](https://leetcode.com/problems/integer-to-english-words/submissions/1904898924). TC: $$O(log_{10}n)$$, SC: $$O(1)$$
 
+### GCD
+
+* :orange\_circle: LC 2654. Minimum Number of Operations to Make All Array Elements Equal to 1
+  * Mind Leap
+    * If there is already a `1`, use it to spread across the array; each non-`1` takes one operation
+    * Otherwise, we must first create the first `1`
+    * Creating a `1` is equivalent to finding the shortest subarray whose gcd is `1`
+    * If a subarray has length `len`, it takes `len - 1` operations to turn one element in it into `1`
+    * Then it takes `n - 1` more operations to spread that `1` to the whole array
+    * So the answer is `n + len - 2`
+  * Invariant / Key Observation
+    * The gcd of the entire array is a necessary feasibility check
+    * If `gcd(nums[0], nums[1], ..., nums[n-1]) > 1`, then it is impossible to ever create a `1`&#x20;
+  * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/submissions/1981333487). TC: $$O(n^2logM)$$, SC: $$O(1)$$
+
 ### Enumeration / Brute Force
 
 * LC 2048. Next Greater Numerically Balanced Number

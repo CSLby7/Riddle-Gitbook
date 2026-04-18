@@ -20,16 +20,18 @@ icon: scroll
   * $$(a+b)\%mod=((a\%mod)+(b\%mod))\%mod$$
   * $$(a-b)\%mod=(a-b+mod)\%mod$$
   * Taking the modulus early can sometimes help prevent overflow in problems with huge numbers.
-*   Get the greatest common divisor (最大公约数)
+* Get the greatest common divisor (最大公约数)
+  * $$gcd(a,b) = gcd(b,a)$$
+  *   $$gcd(gcd(a,b),c) = gcd(a, gcd(b,c))$$ This can be extended to more numbers; the order does not matter
 
-    ```java
-      private int gcd(int x, int y) {
-          if (y == 0) {
-              return x;
-          }
-          return gcd(y, x%y);
-      }
-    ```
+      ```java
+        private int gcd(int x, int y) {
+            if (y == 0) {
+                return x;
+            }
+            return gcd(y, x%y);
+        }
+      ```
 * Get the least common multiple (最小公倍数)
   * $$lcm(a,b) * gcd(a,b) = a*b ⇒ lcm(a,b) = a/gcd(a,b)*b$$
   * ```
