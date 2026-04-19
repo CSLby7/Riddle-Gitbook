@@ -9,10 +9,14 @@ icon: magnifying-glass-arrow-right
 
 * Binary search is essentially an application of the divide-and-conquer paradigm. **Binary search is used to find the boundary where a monotonic predicate changes from false to true (or true to false)**. This algo is useful when resolving questions like
   * Search item in an ordered array
-  * Binary search based on answer space: If the answer can be found by enumerating from small to large and the feasibility of a candidate value can be checked efficiently, then binary search on the answer is usually possible.
+  * Binary search based on answer space: If the answer can be searched over a range, and the _**FEASIBILITY**_ of each candidate can be checked efficiently (rather than constructing the exact solution), then binary search on the answer is often applicable.
     * Sqrt problem
-    * Minimum time problem
     * Capacity problem
+    * Min/Max problem
+      * maximize the minimum
+      * minimize the maximum
+      * largest feasible
+      * smallest feasible
 * Use **close-close range \[l,r] to check array**, the `while` loop condition should be **`while(l<=r)`** because \[l,r] is a valid range.
   * If you want to **memorize it mechanically**, this `while` loop condition applies to **classic binary search** or **finding the first or last occurrence**.
 * Remember to use `long` if necessary
@@ -154,6 +158,8 @@ long midSquare = (long)mid * mid;
   * Key insight: Do not try to construct the actual schedule; instead, check whether a valid schedule exists.
   * Reason: Constructing the schedule leads to combinatorial complexity, while feasibility can be verified by counting available time slots.
   * [Optimal Answer](https://leetcode.com/problems/minimum-time-to-complete-all-deliveries/submissions/1937513167). TC: $$O(log_2(d0*r0+d1*r1))$$, SC: $$O(1)$$
+* :red\_circle: LC 2528. Maximize the Minimum Powered City
+  * [Optimal Answer](https://leetcode.com/problems/maximize-the-minimum-powered-city/submissions/1982991164/). TC: $$O(nlogSum)$$, SC: $$O(n)$$
 
 ### **Peak Finding (2)**
 
