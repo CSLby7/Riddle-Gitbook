@@ -84,6 +84,8 @@ icon: face-tongue-money
     * → After the scan, perform a full validation pass
   * **Invariant:** At index `i`, `candidate` is the only person in `[0..i]` who can still possibly be the celebrity
   * [Optimal Answer](https://leetcode.com/problems/find-the-celebrity/submissions/1981274409). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 2380. Time Needed to Rearrange a Binary String
+  * [Optimal Answer](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/submissions/1983159766). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Resource Balancing
 
