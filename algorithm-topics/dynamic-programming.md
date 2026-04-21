@@ -91,6 +91,20 @@ icon: diagram-successor
       * If a new char is `'b'`, no violation because prefix is alway valid (end with b)
       * If a new char is `'a'`, made a decision (delete this `'a'` or all previous `'b'`) to maintain min cost
 
+### Flow / Propagation DP
+
+* :orange\_circle: LC 799. Champagne Tower
+  * **Mind Leap**
+    * Champagne flows down when a glass overflows
+    * → Overflow only depends on how much a glass receives
+    * → Each glass only receives overflow from two parents
+    * → This is local flow propagation, not global distribution
+    * → We should track “amount received”, not “full or not”
+    * → Define `dp[i][j]` = amount received
+    * → Overflow = `max(0, amount - 1) / 2`
+    * → Build DP row by row
+  * [Optimal Answer](https://leetcode.com/problems/champagne-tower/submissions/1984077762). TC: $$O(queryRow*queryGlass)$$, SC: $$O(queryGlass)$$
+
 ### Pattern Counting
 
 * Notes
