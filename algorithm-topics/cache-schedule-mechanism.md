@@ -66,6 +66,11 @@ Focus:
 
 ### Dynamic Top-K Maintenance
 
+* :white\_circle: LC 3318. Find X-Sum of All K-Long Subarrays I
+  * The idea is straightforward and just implementation is kind of long...
+  * [Optimal Answer](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/submissions/1481704262)
+    * TC: $$O(n*k*log{x})$$
+    * SC: $$O(k+x)$$
 * :red\_circle: LC 3321. Find X-Sum of All K-Long Subarrays II
   * :zap::zap::zap:Key trigger: If the answer depends on a dynamic top-k subset, try maintaining **two balanced and ordered groups** instead of recomputing the subset every time.
   * [Optimal Answer](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/submissions/1984956229). TC: $$O(nlogk)$$, SC: $$O(k)$$

@@ -3,6 +3,7 @@
 * [Overview](README.md)
 * [Checklist for Programming Practices](checklist-for-programming-practices.md)
 * [Cheat Sheet](cheat-sheet.md)
+* [Trigger](trigger.md)
 * [Algorithm Topics](algorithm-topics/README.md)
   * [Binary Search](algorithm-topics/binary-search.md)
   * [Array](algorithm-topics/array.md)

@@ -266,11 +266,6 @@ icon: shelves
     * TC: $$O(M*logM + M*logN)$$
       * > For inner `while` loop, It will have a maximum of `N` iterations each time, but it can't have `N` iterations every time. We can't pop more items than we have previously pushed, and we only push one 1 item per outer loop. Since we only push `M` times, we can only pop `M-1` times over the whole function duration.
     * SC: $$O(N)$$
-* :white\_circle: LC 3318. Find X-Sum of All K-Long Subarrays I
-  * The idea is straightforward and just implementation is kind of long...
-  * [Optimal Answer](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-i/submissions/1481704262)
-    * TC: $$O(n*k*log{x})$$
-    * SC: $$O(k+x)$$
 * :white\_circle: LC 1509. Minimum Difference Between Largest and Smallest Value in Three Moves
   * Approach 1: Full sorting + check result
   * Approach 2 (better): Partial sorting using heap + check result
