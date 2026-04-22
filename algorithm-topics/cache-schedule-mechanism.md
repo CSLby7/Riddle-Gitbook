@@ -24,6 +24,8 @@ Focus:
 
 ## **Typical Questions**
 
+### **Others**
+
 * :star2: :orange\_circle: LC 146. LRU Cache
   * Idea: Implement with Map + Double Linked List (2 dummy nodes for head and tail, respectively)
   * Pitfalls
@@ -61,3 +63,9 @@ Focus:
   * [Optimal Answer](https://leetcode.com/problems/max-stack/submissions/1962252924).
     * TC: $$O(1)$$ for `top` , $$O(logn)$$ for others
     * SC: $$O(n)$$
+
+### Dynamic Top-K Maintenance
+
+* :red\_circle: LC 3321. Find X-Sum of All K-Long Subarrays II
+  * Key mind leap: If the answer depends on a dynamic top-k subset, try maintaining **two balanced and ordered groups** instead of recomputing the subset every time.
+  * [Optimal Answer](https://leetcode.com/problems/find-x-sum-of-all-k-long-subarrays-ii/submissions/1984956229). TC: $$O(nlogk)$$, SC: $$O(k)$$
