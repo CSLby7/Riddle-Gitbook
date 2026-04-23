@@ -150,6 +150,7 @@ icon: face-tongue-money
 
 * Notes
   * Be careful about the **LAST** interval/range during processing. It's easy to miss that!
+  * See trigger page
 * :white\_circle: LC 452. Minimum Number of Arrows to Burst Balloons
   * Try not to modify the input array.
   * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/submissions/1753012795). TC: $$O(n*logn)$$, SC: $$O(logn)$$
@@ -181,3 +182,5 @@ icon: face-tongue-money
 * :orange\_circle: LC 2054. Two Best Non-Overlapping Events
   * I came up with the final solution by myself, but this is after 2 failed attempts and took around 40 minutes in total, including all attempts.
   * [Optimal Answer](https://leetcode.com/problems/two-best-non-overlapping-events/submissions/1974842292). TC: $$O(n*logn)$$, SC: $$O(n)$$
+* :orange\_circle: LC 757. Set Intersection Size At Least Two
+  * [Optimal Answer](https://leetcode.com/problems/set-intersection-size-at-least-two/submissions/1985823936). TC: $$O(nlogn)$$, SC: $$O(logn)$$

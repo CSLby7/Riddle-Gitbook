@@ -4,7 +4,7 @@ icon: bolt-lightning
 
 # Trigger
 
-## Top-K Pattern
+## 1. Top-K Pattern
 
 When you see
 
@@ -21,4 +21,32 @@ Decide:
   * Only need top element OR lazy deletion is acceptable → **Heap** (lazy deletion)
   * Need exact top k set OR frequent arbitrary removal → **Two balanced sets/treeSets** (LC 3321)
   * Need median / split into two halves → Two heaps
+
+## 2. Intervals Pattern
+
+When you see
+
+* Intervals
+* Meetings
+
+Decide:
+
+* What does overlap mean here?
+  * Merge into one structure
+    * Singal: Output is merged ranges/partitions
+    * Sort by start -> maintain active interval
+    * LC 56, 57, 228, 763
+  * Can coexist / can be handled together
+    * Signal: choose max compatible, min removals, min groups
+    * Usually sort by end -> keep the smaller end
+    * LC 435, 452, 252
+  * Previously chosen points can be reused
+    * Signal: need to know how many selected elements are inside interval
+    * Sort by end -> if under-covered, add points from right
+    * LC 757
+
+Core Insight
+
+* start sort → maintain structure
+* end sort → greedy decision
 
