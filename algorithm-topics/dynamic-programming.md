@@ -90,7 +90,7 @@ icon: diagram-successor
     * Transition:
       * If a new char is `'b'`, no violation because prefix is alway valid (end with b)
       * If a new char is `'a'`, made a decision (delete this `'a'` or all previous `'b'`) to maintain min cost
-* LC 1262. Greatest Sum Divisible by Three
+* :orange\_circle: LC 1262. Greatest Sum Divisible by Three
   * Mind Leap: Choose a subset with max sum divisible by 3
     * → Divisibility only depends on sum % 3
     * → Split nums into rem0 / rem1 / rem2
@@ -105,7 +105,7 @@ icon: diagram-successor
           * → dp\[r] = max sum so far with sum % 3 == r
             * → For each num, transition r → (r + num) % 3
               * → return dp\[0]
-* [Optimal Answer](https://leetcode.com/problems/greatest-sum-divisible-by-three/submissions/1988940283). TC: $$O(n)$$, SC: $$O(1)$$
+  * [Optimal Answer](https://leetcode.com/problems/greatest-sum-divisible-by-three/submissions/1988940283). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Flow / Propagation DP
 
