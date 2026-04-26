@@ -26,6 +26,13 @@ icon: right-left
   * Approach 2: 2 pointers + `rightMin` array. TC: $$O(n)$$, SC: $$O(n)$$
 * :white\_circle: LC 696. Count Binary Substrings
   * [Optimal Answer](https://leetcode.com/problems/count-binary-substrings/submissions/1941557061). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 244. Shortest Word Distance II
+  * [Optimal Answer](https://leetcode.com/problems/shortest-word-distance-ii/submissions/1988037362).&#x20;
+  * TC: Constructor $$O(n)$$, `shortest`: $$O(k1+k2)$$
+  * SC: $$O(n)$$
+  * Follow-ups when wordDict is big or certain words have a higher frequency
+    * Add cache
+    * If the two words’ index lists have very different sizes, iterate through the smaller list and binary search in the larger list for the closest index. TC: $$O(min(k1, k2)*log(max(k1, k2)))$$
 
 ### Strings Match
 

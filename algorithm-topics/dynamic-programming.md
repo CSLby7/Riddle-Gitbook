@@ -90,6 +90,22 @@ icon: diagram-successor
     * Transition:
       * If a new char is `'b'`, no violation because prefix is alway valid (end with b)
       * If a new char is `'a'`, made a decision (delete this `'a'` or all previous `'b'`) to maintain min cost
+* LC 1262. Greatest Sum Divisible by Three
+  * Mind Leap: Choose a subset with max sum divisible by 3
+    * → Divisibility only depends on sum % 3
+    * → Split nums into rem0 / rem1 / rem2
+      * → rem0 can always be added
+      * → rem1 and rem2 need to be combined into valid groups→ Valid groups are: 3 rem1, 3 rem2, or rem1 + rem2
+    * → Need to get the best sum from rem1 and rem2 numbers
+      * → :x: I tried to track how many rem1/rem2 numbers were used
+        * → This creates a 2D state and can exceed memory
+      * → :white\_check\_mark: **Key leap: instead of tracking rem1/rem2 counts, track the best sum for each current remainder**
+        * → Same current remainder means same future transition
+        * → Keep only the maximum sum for each remainder
+          * → dp\[r] = max sum so far with sum % 3 == r
+            * → For each num, transition r → (r + num) % 3
+              * → return dp\[0]
+* [Optimal Answer](https://leetcode.com/problems/greatest-sum-divisible-by-three/submissions/1988940283). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Flow / Propagation DP
 
