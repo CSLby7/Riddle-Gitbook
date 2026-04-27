@@ -35,6 +35,16 @@ icon: binary
   * In Java (and most modern systems), **negative** numbers are stored in **two’s complement** format.
     * If `n` is an integer, `-n = ~n+1` . In this way, -n+n will have zero in all bits
   * Also, based on this, `n&(-n)` is a way to **keep the rightmost 1-bit and to set all the other bits to 0**.
+* Rolling Bitmask:&#x20;
+  * Use case: Processing a fixed-size binary window. Use the hash as a compact window ID for checking, counting, or deduplicating binary patterns.
+  * Core idea: The last k bits can be stored directly as an integer.
+  * Update: `hash = ((hash << 1) & mask) | newBit`
+  * Meaning:
+    * `shift left` -> make room for the new bit
+    * `& mask` -> keep only the last k bits
+    * `| newBit` -> append the new bit
+    * Mask: `mask = (1 << k) - 1`&#x20;
+  * Invariant: After each update, hash represents the latest k-bit window.
 
 ## **Typical Questions**
 
@@ -72,3 +82,5 @@ icon: binary
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/submissions/1901645947). TC: $$O(logn)$$, SC: $$O(1)$$
 * :orange\_circle: LC 2749. Minimum Operations to Make the Integer Zero
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-make-the-integer-zero/submissions/1936298177). TC: $$O(1)$$, SC: $$O(1)$$
+* :orange\_circle: LC 1461. Check If a String Contains All Binary Codes of Size K
+  * [Optimal Answer](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/submissions/1989055912). TC: $$O(n)$$, SC: $$O(2^k)$$
