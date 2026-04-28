@@ -168,7 +168,9 @@ icon: timeline
 * :white\_circle: LC 3349. Adjacent Increasing Subarrays Detection I
   * [Optimal Answer](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-i/submissions/1951689039). TC: $$O(N)$$, SC: $$O(1)$$
 * :white\_circle: LC 243. Shortest Word Distance
-  * TC: $$O(N)$$, SC: $$O(1)$$
+  * [Optimal Answer](https://leetcode.com/problems/shortest-word-distance/submissions/1987287955/). TC: $$O(N)$$, SC: $$O(1)$$
+* :white\_circle: LC 245. Shortest Word Distance III
+  * [Optimal Answer](https://leetcode.com/problems/shortest-word-distance-iii/submissions/1989838674/). TC: $$O(N)$$, SC: $$O(1)$$
 
 ### Simulation
 
