@@ -142,6 +142,9 @@ icon: tree-christmas
   * [Optimal Answer](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/submissions/1511811481). TC: $$O(n+q)$$, SC: $$O(n)$$
 * LC 2265. Count Nodes Equal to Average of Subtree
   * [Optimal Answer](https://leetcode.com/problems/binary-tree-paths/submissions/1729517750/). TC: $$O(n)$$, SC: $$O(n)$$
+* LC 1339. Maximum Product of Splitted Binary Tree
+  * Bonus point: Think how to do it without using `long`
+  * [Optimal Answer](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/submissions/1991542167). TC: $$O(n)$$, SC: $$O(h)$$
 
 ### **Tree Path (10)**
 
