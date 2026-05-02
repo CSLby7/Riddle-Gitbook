@@ -19,6 +19,9 @@ icon: diagram-project
 
 * Notes
   * 2 Implementation approach: `Stack` and Recursion
+
+#### General DFS
+
 * :star2: LC 841. Keys and Rooms
   * [Stack Answer](https://leetcode.com/problems/keys-and-rooms/submissions/1466862927).
     * TC: $$O(N+E)$$, where N is the number of rooms, and E is the total number of keys.
@@ -57,6 +60,13 @@ icon: diagram-project
   * Follow-up question ideas
     * Letter frequency check (fail fast): If `word` needs 3 `'A'`s but board only has 2, return `false` immediately. Often eliminates impossible cases instantly.
     * Reverse the word (start from rarer end): DFS branching depends heavily on how many starting cells match the first letter. If the first char is very common, you start DFS from many cells.
+
+#### **Connected Components**
+
+* :orange\_circle: LC 3607. Power Grid Maintenance
+  * [Optimal Answer](https://leetcode.com/problems/power-grid-maintenance/submissions/1993608967).
+  * Let $$m$$ be the length of $$connections$$, i.e., the number of edges in the graph; $$q$$ is the length of $$queries$$.
+    * TC: $$O(m+clogc+qlogc)$$, SC: $$O(m+c)$$
 
 ### **BFS**
 
