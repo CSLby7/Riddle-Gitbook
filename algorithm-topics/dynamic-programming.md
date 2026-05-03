@@ -338,6 +338,16 @@ icon: diagram-successor
       > 求递增序列的时候，因为要求序列有序，所以必须确定序列最后一个元素的值，才能比较新加入序列的元素是不是递增的。求相等序列的时候，如果求连续相等子序列，则还是要确定序列最后一个元素的值；但是本题求的是不必连续的相等子序列，就不需要知道序列最后一个元素的值，只要知道范围内相等的序列长度就行，新来的相等元素可以直接加在序列后面
   * [Optimal Answer](https://leetcode.com/problems/longest-common-subsequence/submissions/1470569648). TC: $$O(M*N)$$, SC: $$O(min(M,N))$$
     * Compressing space needs a special technique.
+* LC 1458. Max Dot Product of Two Subsequences
+  * Mind Leap: Two subsequences with the same length
+    * -> chosen elements must be paired one-to-one, and relative order must be preserved in both arrays
+    * -> this is a two-sequence alignment problem
+    * -> at each (i, j), decide whether nums1\[i] pairs with nums2\[j]
+      * -> if pair: gain nums1\[i] \* nums2\[j]
+      * -> if not pair: skip nums1\[i] or skip nums2\[j]
+    * -> dp\[i]\[j] = best non-empty dot product using prefixes nums1\[0..i], nums2\[0..j]
+  * This question is very similar to the above LC 1143 LCS
+  * [Optimal Answer](https://leetcode.com/problems/max-dot-product-of-two-subsequences/submissions/1993809933). TC: $$O(M*N)$$, SC: $$O(min(M,N))$$
 * LC 1035. Uncrossed Lines
   * Same as above LC 1143
   * [Optimal Answer](https://leetcode.com/problems/uncrossed-lines/submissions/1761950446/).  TC: $$O(M*N)$$, SC: $$O(min(M,N))$$

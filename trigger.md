@@ -50,3 +50,25 @@ Core Insight
 * start sort → maintain structure
 * end sort → greedy decision
 
+## 3. Two-Sequence DP Pattern
+
+When you see&#x20;
+
+* two strings / two arrays&#x20;
+* AND choices must preserve relative order&#x20;
+* AND the answer depends on **matching, aligning, pairing**, or **transforming** both sequences
+
+Think: 2D prefix DP / LCS-style DP
+
+Decide: What does dp\[i]\[j] mean? Usually: best answer using seq1\[0..i] and seq2\[0..j]
+
+Transition shape: What are the choices at (i, j)?&#x20;
+
+* Pair / match / use both&#x20;
+* Skip seq1\[i]&#x20;
+* Skip seq2\[j]
+
+Non-empty requirement: If empty choice is not allowed, do not initialize answer as 0. When taking a pair, allow starting fresh from current pair.
+
+Example questions: LC 1143, 72, 1458
+
