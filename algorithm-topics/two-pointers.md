@@ -33,6 +33,8 @@ icon: right-left
   * Follow-ups when wordDict is big or certain words have a higher frequency
     * Add cache
     * If the two words’ index lists have very different sizes, iterate through the smaller list and binary search in the larger list for the closest index. TC: $$O(min(k1, k2)*log(max(k1, k2)))$$
+* LC 360. Sort Transformed Array
+  * [Optimal Answer](https://leetcode.com/problems/sort-transformed-array/submissions/1994469685). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Strings Match
 
