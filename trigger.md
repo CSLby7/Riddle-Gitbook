@@ -72,3 +72,16 @@ Non-empty requirement: If empty choice is not allowed, do not initialize answer 
 
 Example questions: LC 1143, 72, 1458
 
+## 4. Prefix Index Mod Pattern
+
+When you see&#x20;
+
+* subarray length divisible by k&#x20;
+* OR length has a modulo constraint
+
+Think: `length = r - l` using prefix indices → modulo condition on length becomes modulo condition on prefix indices
+
+Core Insight: `(r - l) % k == 0` → `r % k == l % k` → group prefix sums by `index % k`
+
+For max sum: current prefix - min previous prefix in the same group (Example questions: LC 3381)
+

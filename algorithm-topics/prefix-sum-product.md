@@ -51,6 +51,14 @@ icon: integral
   * [Optimal Answer](https://leetcode.com/problems/maximum-frequency-of-an-element-after-performing-operations-ii/submissions/1972008991). TC: $$O(n*logn)$$, SC: $$O(1)$$
 * :white\_circle: LC 1895. Largest Magic Square
   * [Optimal Answer](https://leetcode.com/problems/largest-magic-square/submissions/1972034894). TC: $$O(m*n*{min(m,n)}^2)$$. SC: $$O(m*n)$$
+* :orange\_circle: LC 3381. Maximum Subarray Sum With Length Divisible by K
+  * Mind Leap: Subarray length divisible by k
+    * → Represent subarray \[l, r-1] using l and r, length = r - l using prefix indices
+    * → (r - l) % k == 0
+    * → r % k == l % k
+    * → group prefix sums by index % k
+    * → for each r, subtract the minimum previous prefix in the same group
+  * [Optimal Answer](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/submissions/1994583237). TC: $$O(n)$$, SC: $$O(k)$$
 
 ### **2D Prefix Sum**
 
