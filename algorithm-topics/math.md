@@ -130,3 +130,5 @@ icon: calculator-simple
   * [Optimal Answer](https://leetcode.com/problems/find-the-number-of-ways-to-place-people-i/submissions/1899348011). TC: $$O(n^2)$$, SC: $$O(logn)$$
 * LC 3047. Find the Largest Area of Square Inside Two Rectangles
   * [Optimal Answer](https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/submissions/1972071492). TC: $$O(n^2)$$, SC: $$O(1)$$
+* LC 3623. Count Number of Trapezoids I
+  * [Optimal Answer](https://leetcode.com/problems/count-number-of-trapezoids-i/submissions/1995492282/). TC: $$O(n)$$, SC: $$O(n)$$
