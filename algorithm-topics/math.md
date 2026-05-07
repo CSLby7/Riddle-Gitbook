@@ -113,6 +113,33 @@ icon: calculator-simple
 
 ### Geometry
 
+* Notes
+  * Geometry Hashing Without Division
+    * ```
+      When grouping lines or segments by slope, avoid using division or double values.
+      Instead of representing slope as dy / dx, normalize the direction vector:
+
+      dx = x2 - x1
+      dy = y2 - y1
+      g = gcd(abs(dx), abs(dy))
+      sx = dx / g
+      sy = dy / g
+
+      Then (sx, sy) becomes the canonical slope key.
+
+      To distinguish different parallel lines with the same slope, use the line invariant:
+      lineKey = sx * y - sy * x
+
+      For all points on the same line, sx * y - sy * x is constant.
+      So: 
+      same (sx, sy) + same lineKey → same line
+      same (sx, sy) + different lineKey → different parallel lines
+
+      This avoids precision issues from double division and gives a clean way to group segments by:
+      1. slope
+      2. exact line position
+      3. full vector, if length and direction also matter
+      ```
 * :orange\_circle: LC 939. Minimum Area Rectangle
   * [Optimal Answer](https://leetcode.com/problems/minimum-area-rectangle/submissions/1479672294). TC: $$O(n^2)$$, SC: $$O(n)$$
 * :red\_circle: LC 963. Minimum Area Rectangle II
@@ -132,3 +159,5 @@ icon: calculator-simple
   * [Optimal Answer](https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles/submissions/1972071492). TC: $$O(n^2)$$, SC: $$O(1)$$
 * LC 3623. Count Number of Trapezoids I
   * [Optimal Answer](https://leetcode.com/problems/count-number-of-trapezoids-i/submissions/1995492282/). TC: $$O(n)$$, SC: $$O(n)$$
+* :red\_circle: LC 3625. Count Number of Trapezoids II
+  * [Optimal Answer](https://leetcode.com/problems/count-number-of-trapezoids-ii/submissions/1997114314). TC: $$O(n^2*logC)$$, SC: $$O(n^2)$$
