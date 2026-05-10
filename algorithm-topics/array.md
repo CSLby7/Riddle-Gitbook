@@ -90,6 +90,12 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/find-n-unique-integers-sum-up-to-zero/submissions/1939380125). TC: $$O(n)$$, SC: $$O(1)$$
 * LC 840. Magic Squares In Grid
   * [Optimal Answer](https://leetcode.com/problems/magic-squares-in-grid/submissions/1962489243). TC: $$O(m*n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 1727. Largest Submatrix With Rearrangements
+  * Approach 1 using the sorting method directly
+    * [Answer](https://leetcode.com/problems/largest-submatrix-with-rearrangements/submissions/1999196582). TC: $$O(m*n*log(mn))$$, SC: $$O(logn)$$
+  * :thumbsup: Approach 2 without direct sorting on every row
+    * This idea of maintaining the sorted order without calling the sorting method is very NB!
+    * [Optimal Answer](https://leetcode.com/problems/largest-submatrix-with-rearrangements/submissions/1999305878). TC: $$O(m*n)$$, SC: $$O(n)$$
 
 ### **Boyer-Moore Voting Algorithm**
 
