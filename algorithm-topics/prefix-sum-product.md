@@ -112,6 +112,8 @@ icon: integral
 * :orange\_circle: LC 1381. Design a Stack With Increment Operation
   * Try to resolve it using the array data structure without any stack data structure.
   * [Optimal Answer](https://leetcode.com/problems/design-a-stack-with-increment-operation/submissions/1568451919/). TC: $$O(1)$$, SC: $$O(n)$$
+* :red\_circle: LC 1674. Minimum Moves to Make Array Complementary
+  * [Optimal Answer](https://leetcode.com/problems/minimum-moves-to-make-array-complementary/submissions/2011152765/). TC: $$O(n+limit)$$, SC: $$O(limit)$$
 
 ### **Probability**
 
