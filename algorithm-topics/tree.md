@@ -140,11 +140,6 @@ icon: tree-christmas
 * :red\_circle: LC 2458. Height of Binary Tree After Subtree Removal Queries
   * Idea: Try to think in the way of checking the height of each node by preorder traversal
   * [Optimal Answer](https://leetcode.com/problems/height-of-binary-tree-after-subtree-removal-queries/submissions/1511811481). TC: $$O(n+q)$$, SC: $$O(n)$$
-* LC 2265. Count Nodes Equal to Average of Subtree
-  * [Optimal Answer](https://leetcode.com/problems/binary-tree-paths/submissions/1729517750/). TC: $$O(n)$$, SC: $$O(n)$$
-* LC 1339. Maximum Product of Splitted Binary Tree
-  * Bonus point: Think how to do it without using `long`
-  * [Optimal Answer](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/submissions/1991542167). TC: $$O(n)$$, SC: $$O(h)$$
 
 ### **Tree Path (10)**
 
@@ -243,6 +238,16 @@ icon: tree-christmas
 
 * LC 872. Leaf-Similar Trees
   * [Optimal Answer](https://leetcode.com/problems/leaf-similar-trees/submissions/1466093078). TC: $$O(n)$$, SC: $$O(n)$$
+
+### **Tree Accumulation**
+
+* :orange\_circle: LC 2872. Maximum Number of K-Divisible Components
+  * [Optimal Answer](https://leetcode.com/problems/maximum-number-of-k-divisible-components/submissions/2012022305). TC: $$O(n)$$, SC; $$O(n)$$
+* LC 2265. Count Nodes Equal to Average of Subtree
+  * [Optimal Answer](https://leetcode.com/problems/binary-tree-paths/submissions/1729517750/). TC: $$O(n)$$, SC: $$O(n)$$
+* LC 1339. Maximum Product of Splitted Binary Tree
+  * Bonus point: Think how to do it without using `long`
+  * [Optimal Answer](https://leetcode.com/problems/maximum-product-of-splitted-binary-tree/submissions/1991542167). TC: $$O(n)$$, SC: $$O(h)$$
 
 ### **BST (10)**
 

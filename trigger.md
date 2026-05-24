@@ -85,3 +85,30 @@ Core Insight: `(r - l) % k == 0` → `r % k == l % k` → group prefix sums by `
 
 For max sum: current prefix - min previous prefix in the same group (Example questions: LC 3381)
 
+## 5. Tree Component Aggregation Pattern
+
+When you see&#x20;
+
+* Tree&#x20;
+* AND remove edges / split into components / count valid components&#x20;
+* AND each component’s validity depends on an aggregated value: sum / size / average / product / modulo / max-min
+
+Think: This is not path exploration. This is bottom-up aggregation.
+
+Core question: What information does each branch need to **carry over to its parent/neighbor**
+
+* Common carry-over values: sum count remainder subtree size best value from subtree
+
+Decision:&#x20;
+
+* If a branch already satisfies the condition, → cut it / count it / stop passing it upward.
+* If a branch does not satisfy the condition, → it cannot stand alone, → carry its aggregated value upward, and merge with the parent/neighbor.
+
+Trigger: When the problem asks about the value of a connected component, do not think “which direction should I explore?” Think “what does this completed branch hand back?”
+
+Example questions:&#x20;
+
+* LC 2872. Maximum Number of K-Divisible Components&#x20;
+* LC 2265. Count Nodes Equal to Average of Subtree&#x20;
+* LC 1339. Maximum Product of Splitted Binary Tree
+
