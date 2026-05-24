@@ -87,6 +87,8 @@ icon: calculator-simple
   * [Optimal Answer](https://leetcode.com/problems/integer-to-english-words/submissions/1904898924). TC: $$O(log_{10}n)$$, SC: $$O(1)$$
 * :white\_circle: LC 1502. Can Make Arithmetic Progression From Sequence
   * [Optimal Answer](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/submissions/1990812214). TC: $$O(n)$$, SC: $$O(n)$$
+* :orange\_circle: LC 3577. Count the Number of Computer Unlocking Permutations
+  * [Optimal Answer](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/submissions/2011218402). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### GCD
 
