@@ -163,3 +163,5 @@ icon: calculator-simple
   * [Optimal Answer](https://leetcode.com/problems/count-number-of-trapezoids-i/submissions/1995492282/). TC: $$O(n)$$, SC: $$O(n)$$
 * :red\_circle: LC 3625. Count Number of Trapezoids II
   * [Optimal Answer](https://leetcode.com/problems/count-number-of-trapezoids-ii/submissions/1997114314). TC: $$O(n^2*logC)$$, SC: $$O(n^2)$$
+* LC 1266. Minimum Time Visiting All Points
+  * [Optimal Answer](https://leetcode.com/problems/minimum-time-visiting-all-points/submissions/2012107810). TC: $$O(n)$$, SC; $$O(1)$$
