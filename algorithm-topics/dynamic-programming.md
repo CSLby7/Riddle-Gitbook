@@ -394,7 +394,10 @@ icon: diagram-successor
 * :white\_circle: LC 647. Palindromic Substrings
   * [Optimal Answer](https://leetcode.com/problems/palindromic-substrings/submissions/1460425743/). TC: $$O(n^2)$$, SC: $$O(n)$$
 * :star2: LC 5. Longest Palindromic Substring
-  * [Optimal Solution](https://leetcode.com/problems/longest-palindromic-substring/submissions/1477332644). TC: $$O(n^2)$$, SC: $$O(n)$$
+  * Approach 1 using DP
+    * [Optimal Solution](https://leetcode.com/problems/longest-palindromic-substring/submissions/1477332644). TC: $$O(n^2)$$, SC: $$O(n)$$
+  * :thumbsup: Approach 2 using center expansion
+    * [Optimal Answer](https://leetcode.com/problems/longest-palindromic-substring/submissions/2023729207). TC: $$O(n^2)$$, SC: $$O(1)$$
 * :star2: LC 516. Longest Palindromic Subsequence
   * [Optimal Answer](https://leetcode.com/problems/longest-palindromic-subsequence/submissions/1460431823/). TC: $$O(n^2)$$, SC: $$O(n)$$
 * :orange\_circle: LC 3472. Longest Palindromic Subsequence After at Most K Operations
