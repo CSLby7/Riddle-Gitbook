@@ -52,6 +52,8 @@ icon: arrow-up-a-z
   * Let $$n$$ be the number of strings, $$m$$ be the minimum length of all strings
     * TC: $$O(n*m)$$
     * SC: $$(1)$$
+  * :orange\_circle: Follow-up: Given a set of keys S = $$[S1​,S2​…Sn​]$$, find the longest common prefix among a string `q` and S. This LCP query will be called frequently.
+    * Build a Trie based on all S and then find the common longest prefix.
 * :red\_circle: LC 2663. Lexicographically Smallest Beautiful String
   * [Understandable Answer](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/submissions/1478217162). TC: $$O(n^2*k)$$, SC: $$O(n)$$
   * Reference: [https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3468265](https://leetcode.com/problems/lexicographically-smallest-beautiful-string/solutions/3468265)
