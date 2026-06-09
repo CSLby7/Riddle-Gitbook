@@ -177,6 +177,8 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/shortest-word-distance/submissions/1987287955/). TC: $$O(N)$$, SC: $$O(1)$$
 * :white\_circle: LC 245. Shortest Word Distance III
   * [Optimal Answer](https://leetcode.com/problems/shortest-word-distance-iii/submissions/1989838674/). TC: $$O(N)$$, SC: $$O(1)$$
+* LC 3010. Divide an Array Into Subarrays With Minimum Cost I
+  * [Optimal Answer](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/submissions/2027078536). TC: $$O(N)$$, SC: $$O(1)$$
 
 ### Simulation
 
