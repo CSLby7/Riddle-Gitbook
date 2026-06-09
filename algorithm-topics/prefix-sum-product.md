@@ -31,7 +31,14 @@ icon: integral
 * :star2: :orange\_circle: LC 560. Subarray Sum Equals K
   *   At first glance, I thought this was a two-pointer problem, **but it's NOT**, for the following reasons:
 
-      > Because prefixSum can either increase or decrease towards the forward movement due to the presence of negative values in the array. Sliding window is only applicable when we know for sure if the prefixSum is an increasing or decreasing function.
+      > Because prefixSum can either increase or decrease towards the forward movement due to the presence of negative values in the array.&#x20;
+      >
+      > Sliding window works when the window sum is **MONOTONIC**:
+      >
+      > * Expanding the window (moving right) can only increase the sum.
+      > * Shrinking the window (moving left) can only decrease the sum.
+      >
+      > This property typically holds when all numbers are **non-negative**.
   * This problem solution equals to prefix sum + 2 sum approach.
   * [Optimal Solution](https://leetcode.com/problems/subarray-sum-equals-k/submissions/1494573680). TC: $$O(n)$$, SC: $$O(1)$$
 * :orange\_circle: LC 152. Maximum Product Subarray
