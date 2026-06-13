@@ -105,6 +105,8 @@ icon: shelves
     * SC: O(1). Max 300 items in the queue.
 * :white\_circle: LC 2534. Time Taken to Cross the Door
   * [Optimal Answer](https://leetcode.com/problems/time-taken-to-cross-the-door/submissions/1970710899). TC: $$O(n)$$, SC: $$O(n)$$
+* :white\_circle: LC 359. Logger Rate Limiter
+  * [Optimal Answer](https://leetcode.com/problems/logger-rate-limiter/submissions/2032086291). TC: Amortized $$O(1)$$, SC: $$O(k)$$, k = number of unique messages in the last 10 seconds
 
 ### **Monotonic Queue (1)**
 
