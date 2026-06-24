@@ -179,6 +179,8 @@ icon: shelves
   * Invariant: At any point during the left-to-right scan, the stack holds a strictly increasing sequence of distinct non-zero values, representing the "active layers" that\
     still need separate operations to eliminate.
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-convert-all-elements-to-zero/submissions/1977774798). TC: $$O(n)$$, SC: $$O(n)$$
+* :white\_circle: LC 1966. Binary Searchable Numbers in an Unsorted Array
+  * [Optimal Answer](https://leetcode.com/problems/binary-searchable-numbers-in-an-unsorted-array/submissions/2044117347). TC: $$O(n)$$, SC; $$O(n)$$
 
 #### **Trapping Rain Water Problems**
 
