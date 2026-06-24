@@ -93,6 +93,12 @@ icon: face-tongue-money
     * → Completion time = max(own cost, dependency constraint)
     * → Accumulate the result in one pass
   * [Optimal Answer](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/submissions/1983159766). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 1665. Minimum Initial Energy to Finish Tasks
+  * Approach 1: Greedy sorting + Binary Search
+    * Came up with this solution by myself.
+    * [Answer.](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/submissions/2044993247) TC: $$O(nlogn)$$, SC: $$O(logn)$$
+  * :thumbsup: Approach 2: Greedy sorting + Single Pass
+    * [Optimal Answer](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/submissions/2044999348). TC: $$O(nlogn)$$, SC: $$O(logn)$$
 
 ### Resource Balancing
 
