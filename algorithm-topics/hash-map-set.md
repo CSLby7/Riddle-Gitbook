@@ -131,6 +131,8 @@ icon: map-location-dot
   * I mistakenly used TreeSet to address this problem. Although this can work but it's not optimal answer. TreeSet is for neighbor search (this is just a **PLAIN** translation of the question). However, the problem only requires checking **existence**, not finding actual neighbors.\
     This can be simplified to a **boundary check**: a building is covered if it is strictly between the min and max in its row and column. So instead of maintaining a full ordered set, we **ONLY** need to track **min/max per row and column**, reducing both complexity and overhead.
   * [Optimal Answer](https://leetcode.com/problems/count-covered-buildings/submissions/1955173800). TC: $$O(n)$$, SC: $$O(n)$$
+* LC 1797. Design Authentication Manager
+  * [Optimal Answer](https://leetcode.com/problems/design-authentication-manager/submissions/2045208041). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **TreeMap/TreeSet (6)**
 
