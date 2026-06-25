@@ -255,6 +255,16 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b) -> b - a);
         map[c]++;
     }
     ```
+*   Remove during map iteration
+
+    ```java
+    Iterator<Map.Entry<String, Integer>> it = map.entrySet().iterator();
+    while(it.hasNext()) {
+        if (it.next.value() < x) {
+            it.remove();
+        }
+    }
+    ```
 * `computeIfAbsent(key, mappingFunction)`
   * Use case: For example, `Map<Integer, List<Integer>>`. When the key does **NOT** exist, we want to **create** a `List` first and then add the **first** element into `List`; When the key exists, we want to **get the existing list** and **append** a new element to that `List`. **This is frequently used in building adjacency lists using `Map` in the graph topic.**
   * Syntax example: `map.computeIfAbsent("key", k -> new ArrayList<>()).add("value1");`
