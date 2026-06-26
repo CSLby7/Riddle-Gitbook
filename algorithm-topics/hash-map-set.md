@@ -134,6 +134,15 @@ icon: map-location-dot
 * LC 1797. Design Authentication Manager
   * [Optimal Answer](https://leetcode.com/problems/design-authentication-manager/submissions/2045208041). TC: $$O(n)$$, SC: $$O(n)$$
 
+### **LinkedHashSet**
+
+* :white\_circle: LC 1429. First Unique Number
+  * [Optimal Answer](https://leetcode.com/problems/first-unique-number/submissions/2046420512).&#x20;
+  * TC
+    * Constructor: $$O(k)$$
+    * All other methods: $$O(1)$$
+  * SC: $$O(n)$$
+
 ### **TreeMap/TreeSet (6)**
 
 * Notes

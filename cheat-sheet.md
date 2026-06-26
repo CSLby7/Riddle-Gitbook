@@ -282,7 +282,7 @@ PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b) -> b - a);
 
 * Initialize `Set` with values: `Set<Character> set = new HashSet<>(Arrays.asList('a', 'A'));`
 * `LinkedHashSet`
-  * Use case: **LFU** !!!
+  * Use case: **LFU** or LC 1429 !!!
   * Get the first item: `set.iterator().next()`
 * `Set` implementations comparison
 
