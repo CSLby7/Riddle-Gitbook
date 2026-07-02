@@ -86,3 +86,5 @@ icon: binary
   * [Optimal Answer](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/submissions/1989055912). TC: $$O(n)$$, SC: $$O(2^k)$$
 * :orange\_circle: LC 3314. Construct the Minimum Bitwise Array I
   * [Optimal Answer](https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/submissions/2052755035/). TC: $$O(nlogm)$$, SC: $$O(1)$$
+* LC 3315. Construct the Minimum Bitwise Array II
+  * Same as above.
