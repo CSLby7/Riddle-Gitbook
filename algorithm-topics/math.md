@@ -91,6 +91,33 @@ icon: calculator-simple
   * [Optimal Answer](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/submissions/2011218402). TC: $$O(n)$$, SC: $$O(1)$$
 * :red\_circle: LC 3666. Minimum Operations to Equalize Binary String
   * Proof: [https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/solutions/7613102/o1-math-solution-full-proof-intuition-ex-mvvu](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/solutions/7613102/o1-math-solution-full-proof-intuition-ex-mvvu)
+    * <pre><code><strong>Shorter version of the above proof
+      </strong><strong>
+      </strong><strong>n -> len of s
+      </strong>z -> number of 0
+      w -> number of 1
+      b -> number of positions not flipped per operation
+      m -> number of operations
+
+      condition-1: m*k >= z -> m >= z/k
+      condition-2:
+        - if m is odd
+          - max flip of each zero: m
+          - max flip of each one: m-1
+          - m*k &#x3C;= z*m+w*(m-1) -> m*k &#x3C;= (z+w)*m-w -> m*k &#x3C;= n*m-w -> m >= w/b
+        - if m is even
+          - max flip of each zero: m-1
+          - max flip of each one: m
+          - m*k &#x3C;= z*(m-1)+w*m -> m*k &#x3C;= (z+w)*m-z -> m*k &#x3C;= n*m-z -> m >= z/b
+
+      Based on conditions 1 and 2
+        - if m is odd,  m = max(z/k, w/b)
+        - if m is even, m = max(z/k, z/b)
+
+      condition-3: the parity of m*k &#x3C;=> the parity of z
+        - if m is odd, k%2 == z%2
+        - if m is even, z%2 == 0
+      </code></pre>
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/submissions/2056183079/). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### GCD
