@@ -112,3 +112,9 @@ Example questions:&#x20;
 * LC 2265. Count Nodes Equal to Average of Subtree&#x20;
 * LC 1339. Maximum Product of Splitted Binary Tree
 
+## 6. Alternating String/Array
+
+**Invariant to maintain state -> Index parity**
+
+* For an alternating string, the value at each position is completely determined by its index parity.
+
