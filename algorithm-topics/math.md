@@ -119,6 +119,8 @@ icon: calculator-simple
         - if m is even, z%2 == 0
       </code></pre>
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/submissions/2056183079/). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 1344. Angle Between Hands of a Clock
+  * [Optimal Answer](https://leetcode.com/problems/angle-between-hands-of-a-clock/submissions/2058651746). TC: $$O(1)$$, SC: $$O(1)$$
 
 ### GCD
 
