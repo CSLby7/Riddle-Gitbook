@@ -114,6 +114,8 @@ icon: right-left
     * My initial solution simulated flips from left to right, where the decision for each character depended on the corrected value of the previous character. This created a **sequential dependency**, making the state **impossible** to update incrementally when the sliding window moved—removing the leftmost character could invalidate the entire computation.
     * The correct approach is to **redefine the state**. Instead of tracking the flip process, represent the answer as the **sum of independent per-index contributions** (mismatches against the **two fixed alternating patterns**). Once each index contributes independently, a sliding window only needs to remove the left contribution and add the right contribution, reducing the complexity from **O(n²)** to **O(n)**.
   * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/submissions/2058561844). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 1151. Minimum Swaps to Group All 1's Together
+  * [Optimal Answer](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/submissions/2059914258/). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### **Sliding Window - Subarray/Substring Search Meeting With Requirements**
 
@@ -139,7 +141,7 @@ icon: right-left
   * Therefore, we should always check if it is a valid case at the end of each iteration
 * :red\_circle: LC 3346. Maximum Frequency of an Element After Performing Operations I
   * I made some progress. I realized the input array needs to be sorted first, and get an $$O(n^2)$$ idea for the 1st case below, but then I got stuck.
-  * 2 cases for central point (the value that elements get updated to)
+  * 2 cases for the central point (the value that elements get updated to)
     * It's an existing element
       * **After sorting, for each element `e` in the array, there is a technique to find the number of elements within the range `[e-k,e+k]` in** $$O(n)$$ **by scanning the array once.**
     * It's a value that does not exist in the input array
@@ -147,7 +149,7 @@ icon: right-left
 * :white\_circle: LC 2762. Continuous Subarrays
   * There is another optimal answer that only uses 2 pointers without `TreeMap` . Since it has the same TC and SC as my answer and it's more complicated to understand, I did not use it.
   * [Optimal Answer](https://leetcode.com/problems/continuous-subarrays/submissions/1562157563).
-    * Let $$n$$ be the size of input, and $$k$$ be the size of `TreeMap` . Since $$k$$ should always <= 3 based on the requirement of the question, we can treat $$k$$ as a constant
+    * Let $$n$$ be the size of the input, and $$k$$ be the size of `TreeMap` . Since $$k$$ should always <= 3 based on the requirement of the question, we can treat $$k$$ as a constant
     * TC: $$O(n*log{k}) => O(n)$$
     * SC: $$O(k) => O(1)$$
 * :red\_circle: LC 30. Substring with Concatenation of All Words
