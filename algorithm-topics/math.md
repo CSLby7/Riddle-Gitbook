@@ -89,6 +89,11 @@ icon: calculator-simple
   * [Optimal Answer](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/submissions/1990812214). TC: $$O(n)$$, SC: $$O(n)$$
 * :orange\_circle: LC 3577. Count the Number of Computer Unlocking Permutations
   * [Optimal Answer](https://leetcode.com/problems/count-the-number-of-computer-unlocking-permutations/submissions/2011218402). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 1344. Angle Between Hands of a Clock
+  * [Optimal Answer](https://leetcode.com/problems/angle-between-hands-of-a-clock/submissions/2058651746). TC: $$O(1)$$, SC: $$O(1)$$
+
+### Invariants & Proof
+
 * :red\_circle: LC 3666. Minimum Operations to Equalize Binary String
   * Proof: [https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/solutions/7613102/o1-math-solution-full-proof-intuition-ex-mvvu](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/solutions/7613102/o1-math-solution-full-proof-intuition-ex-mvvu)
     * <pre><code><strong>Shorter version of the above proof
@@ -119,8 +124,40 @@ icon: calculator-simple
         - if m is even, z%2 == 0
       </code></pre>
   * [Optimal Answer](https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/submissions/2056183079/). TC: $$O(n)$$, SC: $$O(1)$$
-* :white\_circle: LC 1344. Angle Between Hands of a Clock
-  * [Optimal Answer](https://leetcode.com/problems/angle-between-hands-of-a-clock/submissions/2058651746). TC: $$O(1)$$, SC: $$O(1)$$
+
+### Median
+
+* :red\_circle: LC 1703. Minimum Adjacent Swaps for K Consecutive Ones
+  * ```
+    Explanation
+
+    Assume k == 3. Record the indices of all 1's into below list
+    pos = [2, 4, 7, ...]
+
+    The optimal answer must come from k consecutive 1s in this list, 
+    So enumerate every window of size k.
+
+    For each window, we want to move [pos[left], pos[left+1], pos[left+2]]
+    into consecutive positions: [target, target+1, target+2].
+
+    Total moves = |pos[left]-target| + |pos[left+1]-(target+1)|+ |pos[left+2]-(target+2)|
+      => |(pos[left]-0)-target| + |(pos[left+1]-1)-target| + |(pos[left+2]-2)-target|
+
+    Define b[i] = pos[i] - i
+    (Using the global index i instead of the window-relative index only shifts every value
+     in the window by the same constant, which does not change the absolute differences.)
+
+    Therefore, the problem becomes the following, for each window [left, right]
+      Σ |b[i] - target|
+    The target value minimizing the sum of absolute differences is the median.
+
+    For every window, let mid = left+k/2; then b[mid] is the median.
+    Total moves = 
+    (median-b[left]) + ... + (median-b[mid-1]) + (b[mid+1]-median) + ... + (b[right]-median)
+
+    Find the minimum total moves across all windows
+    ```
+  * [Optimal Answer](https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/submissions/2061156139). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### GCD
 
