@@ -116,6 +116,37 @@ icon: right-left
   * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/submissions/2058561844). TC: $$O(n)$$, SC: $$O(1)$$
 * LC 1151. Minimum Swaps to Group All 1's Together
   * [Optimal Answer](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/submissions/2059914258/). TC: $$O(n)$$, SC: $$O(1)$$
+* :red\_circle: LC 1703. Minimum Adjacent Swaps for K Consecutive Ones
+  * ```
+    Explanation
+
+    Assume k == 3. Record the indices of all 1's into below list
+    pos = [2, 4, 7, ...]
+
+    The optimal answer must come from k consecutive 1s in this list, 
+    So enumerate every window of size k.
+
+    For each window, we want to move [pos[left], pos[left+1], pos[left+2]]
+    into consecutive positions: [target, target+1, target+2].
+
+    Total moves = |pos[left]-target| + |pos[left+1]-(target+1)|+ |pos[left+2]-(target+2)|
+      => |(pos[left]-0)-target| + |(pos[left+1]-1)-target| + |(pos[left+2]-2)-target|
+
+    Define b[i] = pos[i] - i
+    (Using the global index i instead of the window-relative index only shifts every value
+     in the window by the same constant, which does not change the absolute differences.)
+
+    Therefore, the problem becomes the following, for each window [left, right]
+      Σ |b[i] - target|
+    The target value minimizing the sum of absolute differences is the median.
+
+    For every window, let mid = left+k/2; then b[mid] is the median.
+    Total moves = 
+    (median-b[left]) + ... + (median-b[mid-1]) + (b[mid+1]-median) + ... + (b[right]-median)
+
+    Find the minimum total moves across all windows
+    ```
+  * [Optimal Answer](https://leetcode.com/problems/minimum-adjacent-swaps-for-k-consecutive-ones/submissions/2061156139). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **Sliding Window - Subarray/Substring Search Meeting With Requirements**
 
