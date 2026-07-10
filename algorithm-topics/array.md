@@ -186,3 +186,5 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/pour-water/submissions/1606047834). TC: $$O(n*v)$$, SC: $$O(1)$$
 * LC 1929. Concatenation of Array
   * [Optimal Answer](https://leetcode.com/problems/concatenation-of-array/submissions/1952647217). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 3379. Transformed Array
+  * [Optimal Answer](https://leetcode.com/problems/transformed-array/submissions/2062278381). TC: $$O(n)$$, SC: $$O(1)$$
