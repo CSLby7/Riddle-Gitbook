@@ -47,7 +47,7 @@ icon: arrow-up-a-z
     * if `str1 + str2 == str2 + str1`, the divisible string must exist,
       * if the divisible string exists, it must be a prefix of either `str1` or `str2`
       * if the divisible string exists, the gcd string length must be the gcd of `str1` length and `str2` length
-* :white\_circle: LC 14. Longest Common Prefix
+* LC 14. Longest Common Prefix
   * [Optimal Solution](https://leetcode.com/problems/longest-common-prefix/submissions/1477360462).
   * Let $$n$$ be the number of strings, $$m$$ be the minimum length of all strings
     * TC: $$O(n*m)$$
