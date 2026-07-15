@@ -179,6 +179,8 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/shortest-word-distance-iii/submissions/1989838674/). TC: $$O(N)$$, SC: $$O(1)$$
 * LC 3010. Divide an Array Into Subarrays With Minimum Cost I
   * [Optimal Answer](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/submissions/2027078536). TC: $$O(N)$$, SC: $$O(1)$$
+* LC 3637. Trionic Array I
+  * [Optimal Answer](https://leetcode.com/problems/trionic-array-i/submissions/2067948251). TC: $$O(N)$$, SC: $$O(1)$$
 
 ### Simulation
 
