@@ -98,6 +98,12 @@ icon: integral
   * :thumbsup: Approach 2: 2D Prefix Sum + Enumeration
     * [Optimal Answer](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/submissions/1957351872). TC: $$O(m*n)$$, SC: $$O(m*n)$$
 
+### **Prefix with State Transformation**
+
+* Notes: Instead of storing a prefix sum/product, define a custom prefix state so that equal states imply the subarray between them satisfies the required condition.
+* :orange\_circle: LC 3714. Longest Balanced Substring II
+  * [Optimal Answer](https://leetcode.com/problems/longest-balanced-substring-ii/submissions/2070584518). TC: $$O(n)$$, SC: $$O(n)$$
+
 ### **Difference Array (Sweep Line Algo)**
 
 * Notes:
