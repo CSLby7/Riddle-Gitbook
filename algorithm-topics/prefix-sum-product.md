@@ -102,6 +102,7 @@ icon: integral
 
 * Notes: Instead of storing a prefix sum/product, define a custom prefix state so that equal states imply the subarray between them satisfies the required condition.
 * :orange\_circle: LC 3714. Longest Balanced Substring II
+  * Its previous question "LC 3713. Longest Balanced Substring I" cannot be resolved in the same way because that question contains all lowercase letters instead of only "a,b,c". Therefore, this approach will introduce too many states, which is unmanageable.
   * [Optimal Answer](https://leetcode.com/problems/longest-balanced-substring-ii/submissions/2070584518). TC: $$O(n)$$, SC: $$O(n)$$
 
 ### **Difference Array (Sweep Line Algo)**
