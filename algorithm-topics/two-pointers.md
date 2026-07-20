@@ -116,6 +116,8 @@ icon: right-left
   * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/submissions/2058561844). TC: $$O(n)$$, SC: $$O(1)$$
 * LC 1151. Minimum Swaps to Group All 1's Together
   * [Optimal Answer](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/submissions/2059914258/). TC: $$O(n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 3013. Divide an Array Into Subarrays With Minimum Cost II
+  * [Optimal Answer](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/submissions/2074056931). TC: $$O(nlogdist)$$, SC: $$O(dist)$$
 
 ### **Sliding Window - Subarray/Substring Search Meeting With Requirements**
 

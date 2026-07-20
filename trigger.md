@@ -19,7 +19,7 @@ Decide:
 * Static or only insertion → heap (LC 347)
 * Dynamic updates:
   * Only need top element OR lazy deletion is acceptable → **Heap** (lazy deletion)
-  * Need exact top k set OR frequent arbitrary removal → **Two balanced sets/treeSets** (LC 3321)
+  * Need exact top k set OR frequent arbitrary removal → **Two balanced sets/treeSets** (LC 3321, LC 3013)
   * Need median / split into two halves → Two heaps
 
 ## 2. Intervals Pattern
