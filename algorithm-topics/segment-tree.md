@@ -29,6 +29,11 @@ icon: list-tree
 
 ## **Typical Questions**
 
+### Others
+
+* LC 3719. Longest Balanced Subarray I
+  * [Answer](https://leetcode.com/problems/longest-balanced-subarray-i/submissions/2080215603) (Not optimal answer. See optimal answer in v2 of this problem). TC: $$O(n^2)$$, SC: $$O(n)$$
+
 ### **Max Segment Tree**
 
 * LC 3477. Fruits Into Baskets II
