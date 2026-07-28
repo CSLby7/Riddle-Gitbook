@@ -29,10 +29,22 @@ icon: list-tree
 
 ## **Typical Questions**
 
-### Others
+### Lazy Propagation & Tree Search
 
+* Notes
+  * Lazy Propagation: Supports **range updates** (e.g. range add / range assignment) in `O(log n)`.
+    * Defers updates to child nodes until they are actually needed.
+    * Introduces **lazy tags** along with `push()` and `pull()`.
+  * Tree Search: Instead of returning an aggregate value (sum / min / max), traverses the segment tree to **locate an index** satisfying some condition in `O(log n)`.
+    * Common examples:
+      * Find the first/last position satisfying a condition.
+      * Find the k-th element.
+      * Find the first value ≥ x.
 * LC 3719. Longest Balanced Subarray I
   * [Answer](https://leetcode.com/problems/longest-balanced-subarray-i/submissions/2080215603) (Not optimal answer. See optimal answer in v2 of this problem). TC: $$O(n^2)$$, SC: $$O(n)$$
+* :red\_circle: LC 3721. Longest Balanced Subarray II
+  * It's toooo hard.
+  * [Optimal Answer](https://leetcode.com/problems/longest-balanced-subarray-ii/submissions/2081253686). TC: $$O(nlogn)$$, SC: $$O(n)$$
 
 ### **Max Segment Tree**
 
