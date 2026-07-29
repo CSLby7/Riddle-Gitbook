@@ -176,6 +176,8 @@ icon: right-left
     * [Answer](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/submissions/1923997390/). TC: $$O(n+klogn)$$, SC: $$O(n)$$
   * :thumbsup: Approach 3 with Sliding Window
     * [Optimal Answer](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/submissions/1926749800/). TC: $$O(n)$$, SC: $$O(1)$$
+* LC 3634. Minimum Removals to Balance Array
+  * [Optimal Answer](https://leetcode.com/problems/minimum-removals-to-balance-array/submissions/2085472334). TC: $$O(nlogn)$$, SC: $$O(logn)$$
 
 #### :jigsaw: **Sliding Window with Non-Aggressive Shrinking**
 
