@@ -128,6 +128,9 @@ icon: diagram-successor
   * Let each pattern type be a DP state representing how many ways it can appear.
 * :orange\_circle: LC 1411. Number of Ways to Paint N × 3 Grid
   * [Optimal Answer](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/submissions/1943508321). TC: $$O(n)$$, SC: $$O(1)$$
+* :red\_circle: LC 3699. Number of ZigZag Arrays I
+  * [Optimal Answer](https://leetcode.com/problems/number-of-zigzag-arrays-i/submissions/2089323746).
+  * Let $$m$$ denote the size of the interval, TC: $$O(nm)$$, SC: $$O(m)$$
 
 ### 2D Matrix Problems
 
