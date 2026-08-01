@@ -66,6 +66,8 @@ icon: integral
     * → group prefix sums by index % k
     * → for each r, subtract the minimum previous prefix in the same group
   * [Optimal Answer](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/submissions/1994583237). TC: $$O(n)$$, SC: $$O(k)$$
+* :white\_circle: LC 3737. Count Subarrays With Majority Element I
+  * [Answer](https://leetcode.com/problems/count-subarrays-with-majority-element-i/submissions/2090609770). TC: $$O(n^2)$$, SC: $$O(1)$$
 
 ### **2D Prefix Sum**
 
