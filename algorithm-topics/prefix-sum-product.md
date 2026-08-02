@@ -66,8 +66,6 @@ icon: integral
     * → group prefix sums by index % k
     * → for each r, subtract the minimum previous prefix in the same group
   * [Optimal Answer](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/submissions/1994583237). TC: $$O(n)$$, SC: $$O(k)$$
-* :white\_circle: LC 3737. Count Subarrays With Majority Element I
-  * [Answer](https://leetcode.com/problems/count-subarrays-with-majority-element-i/submissions/2090609770). TC: $$O(n^2)$$, SC: $$O(1)$$
 
 ### **2D Prefix Sum**
 
@@ -106,6 +104,17 @@ icon: integral
 * :orange\_circle: LC 3714. Longest Balanced Substring II
   * Its previous question "LC 3713. Longest Balanced Substring I" cannot be resolved in the same way because that question contains all lowercase letters instead of only "a,b,c". Therefore, this approach will introduce too many states, which is unmanageable.
   * [Optimal Answer](https://leetcode.com/problems/longest-balanced-substring-ii/submissions/2070584518). TC: $$O(n)$$, SC: $$O(n)$$
+* :white\_circle: LC 3737. Count Subarrays With Majority Element I
+  * The answer is something I can come up with instead of an optimal answer. See optimal answer in next question.
+  * [Answer](https://leetcode.com/problems/count-subarrays-with-majority-element-i/submissions/2090609770). TC: $$O(n^2)$$, SC: $$O(1)$$
+* :red\_circle: LC 3739. Count Subarrays With Majority Element II
+  * Map `target` to `+1` and all other values to `-1`, so a valid subarray has a positive transformed sum.
+  *   The first prefix sum converts each subarray condition into a comparison:
+
+      `subarraySum(i, j) > 0` iff `prefix[i] < prefix[j]`.
+  * Let `freq[x]` be the frequency of previously seen prefix-sum value `x`. Conceptually, a second prefix sum over `freq` gives the number of previous prefix sums smaller than the current one.
+  * Since the current prefix sum moves only by `±1`, this cumulative count can be maintained directly in O(1).
+  * [Optimal Answer](https://leetcode.com/problems/count-subarrays-with-majority-element-ii/submissions/2090632256/). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### **Difference Array (Sweep Line Algo)**
 
