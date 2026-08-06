@@ -99,6 +99,8 @@ icon: face-tongue-money
     * [Answer.](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/submissions/2044993247) TC: $$O(nlogn)$$, SC: $$O(logn)$$
   * :thumbsup: Approach 2: Greedy sorting + Single Pass
     * [Optimal Answer](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/submissions/2044999348). TC: $$O(nlogn)$$, SC: $$O(logn)$$
+* LC 3689. Maximum Total Subarray Value I
+  * [Optimal Answer](https://leetcode.com/problems/maximum-total-subarray-value-i/submissions/2096025308). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### Resource Balancing
 
