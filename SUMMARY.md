@@ -23,5 +23,5 @@
   * [Cache & Priority Systems](algorithm-topics/cache-schedule-mechanism.md)
   * [Math](algorithm-topics/math.md)
   * [Divide & Conquer](algorithm-topics/divide-and-conquer.md)
-  * [Segment Tree](algorithm-topics/segment-tree.md)
+  * [Range Query](algorithm-topics/range-query.md)
 * [Progress & Plan](progress-and-plan.md)

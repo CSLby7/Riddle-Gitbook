@@ -1,11 +1,13 @@
 ---
 description: Notes and typical questions for Segment Tree related questions
-icon: list-tree
+icon: arrows-left-right-to-line
 ---
 
-# Segment Tree
+# Range Query
 
-## Notes
+## Segment Tree
+
+### Notes
 
 * Introduction: https://www.bilibili.com/video/BV1cb411t7AM/?share\_source=copy\_web\&vd\_source=28fd44c5c9b62466ed4422197e99ce77
 * Segment Tree **Size** — Why `4*n` Is Enough
@@ -27,9 +29,9 @@ icon: list-tree
     * During query, first check feasibility, then descend left-first to locate the smallest valid index.
     * This keeps each operation `O(logn)` instead of `O(log²n)`.
 
-## **Typical Questions**
+### **Typical Questions**
 
-### Lazy Propagation & Tree Search
+#### Lazy Propagation & Tree Search
 
 * Notes
   * Lazy Propagation: Supports **range updates** (e.g. range add / range assignment) in `O(log n)`.
@@ -46,7 +48,7 @@ icon: list-tree
   * It's toooo hard.
   * [Optimal Answer](https://leetcode.com/problems/longest-balanced-subarray-ii/submissions/2081253686). TC: $$O(nlogn)$$, SC: $$O(n)$$
 
-### **Max Segment Tree**
+#### **Max Segment Tree**
 
 * LC 3477. Fruits Into Baskets II
   * Same as below.
@@ -58,3 +60,48 @@ icon: list-tree
   * TC: $$O(n+n*((log{n})^2+log{n})) => O(n*log{n})$$
   * SC: $$O(n)$$
 
+## Sparse Table
+
+### Notes
+
+* Use Case
+  * Static array (no updates).
+  * Many range `min/max/gcd` queries.
+* State
+  * `st[i][j] = answer for interval [i, i + 2^j - 1]`
+  * `j` is the **exponent**, not the interval length.
+    * ```
+      j = 0 -> length 1
+      j = 1 -> length 2
+      j = 2 -> length 4
+      ...
+      ```
+* Build
+  * ```
+    st[i][j]
+    = merge(
+        st[i][j-1],
+        st[i + 2^(j-1)][j-1]
+    )
+    ```
+* Query
+  * ```
+    len = r - l + 1
+    j = floor(log2(len))
+
+    Answer using two overlapping blocks:
+    [l, l + 2^j - 1]
+    [r - 2^j + 1, r]
+
+    Example (len = 7):
+    [0 1 2 3 4 5 6]
+    [0 1 2 3]
+          [3 4 5 6]
+
+    Works because min/max/gcd are idempotent (overlap doesn't affect the result).
+    ```
+
+### **Typical Questions**
+
+* LC 3691. Maximum Total Subarray Value II
+  * [Optimal Answer](https://leetcode.com/problems/maximum-total-subarray-value-ii/submissions/2099600993). TC: $$O(nlogn + klogn)$$, SC: $$O(nlogn)$$
