@@ -131,6 +131,8 @@ icon: diagram-successor
 * :red\_circle: LC 3699. Number of ZigZag Arrays I
   * [Optimal Answer](https://leetcode.com/problems/number-of-zigzag-arrays-i/submissions/2089323746).
   * Let $$m$$ denote the size of the interval, TC: $$O(nm)$$, SC: $$O(m)$$
+* :orange\_circle: LC 3129. Find All Possible Stable Binary Arrays I
+  * [Optimal Answer](https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/submissions/2106013999). TC: $$O(zero*one)$$, SC: $$O(zero*one)$$
 
 ### 2D Matrix Problems
 
