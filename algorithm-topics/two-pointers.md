@@ -118,6 +118,8 @@ icon: right-left
   * [Optimal Answer](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/submissions/2059914258/). TC: $$O(n)$$, SC: $$O(1)$$
 * :orange\_circle: LC 3013. Divide an Array Into Subarrays With Minimum Cost II
   * [Optimal Answer](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/submissions/2074056931). TC: $$O(nlogdist)$$, SC: $$O(dist)$$
+* :white\_circle: LC 1291. Sequential Digits
+  * [Optimal Answer](https://leetcode.com/problems/sequential-digits/submissions/2108204943). TC: $$O(1)$$, SC: $$O(1)$$
 
 ### **Sliding Window - Subarray/Substring Search Meeting With Requirements**
 
