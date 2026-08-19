@@ -192,3 +192,8 @@ icon: face-tongue-money
   * [Optimal Answer](https://leetcode.com/problems/two-best-non-overlapping-events/submissions/1974842292). TC: $$O(n*logn)$$, SC: $$O(n)$$
 * :orange\_circle: LC 757. Set Intersection Size At Least Two
   * [Optimal Answer](https://leetcode.com/problems/set-intersection-size-at-least-two/submissions/1985823936). TC: $$O(nlogn)$$, SC: $$O(logn)$$
+
+### Classification Discussion
+
+* :orange\_circle: LC 3633. Earliest Finish Time for Land and Water Rides I
+  * [Optimal Answer](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/submissions/2112171898). TC: $$O(m+n)$$, SC: $$O(1)$$
