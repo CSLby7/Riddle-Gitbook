@@ -197,3 +197,5 @@ icon: face-tongue-money
 
 * :orange\_circle: LC 3633. Earliest Finish Time for Land and Water Rides I
   * [Optimal Answer](https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/submissions/2112171898). TC: $$O(m+n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 3635. Earliest Finish Time for Land and Water Rides II
+  * Same as above.
