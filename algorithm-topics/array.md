@@ -125,6 +125,8 @@ icon: timeline
 * LC 1200. Minimum Absolute Difference
   * Also consider counting/bucket approaches when the value range is small.
   * [Optimal Answer](https://leetcode.com/problems/minimum-absolute-difference/submissions/1976600387). TC: $$O(nlogn)$$, SC: $$O(logn)$$
+* :white\_circle: LC 3517. Smallest Palindromic Rearrangement I
+  * [Optimal Answer](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/submissions/2117923639). TC: $$O(nlogn)$$, SC: $$O(logn)$$
 
 ### **DNF algorithm**
 
