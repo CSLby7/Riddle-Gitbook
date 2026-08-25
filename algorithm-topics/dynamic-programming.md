@@ -362,6 +362,9 @@ icon: diagram-successor
   * This problem isn’t about computing every subarray OR (which leads to $$O(n^2)$$), but about realizing that **for each ending index, the number of distinct OR results is bounded (\~32).**
   * I was enumerating all subarrays (all dp\[i]\[j]), but the real insight is that for each fixed right endpoint j, the number of **distinct OR states** is bounded (\~32), so the optimization comes from compressing the state space rather than scanning all i.
   * [Optimal Answer](https://leetcode.com/problems/bitwise-ors-of-subarrays/submissions/1927842953). where $$N$$ is the length of `A`, and $$W$$ is the maximum size of elements in `A` , TC: $$O(n*logW)$$, SC: $$O(n*logW)$$
+* :red\_circle: LC 3336. Find the Number of Subsequences With Equal GCD
+  * It's hard to come up with the DP state definition.
+  * [Optimal Answer](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/submissions/2120001857). TC: $$O(n*max^2 * log(max))$$, SC: $$O(max^2)$$
 
 #### :jigsaw: **Edit Distance series**
 
