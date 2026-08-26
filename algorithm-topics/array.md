@@ -183,6 +183,8 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-i/submissions/2027078536). TC: $$O(N)$$, SC: $$O(1)$$
 * LC 3637. Trionic Array I
   * [Optimal Answer](https://leetcode.com/problems/trionic-array-i/submissions/2067948251). TC: $$O(N)$$, SC: $$O(1)$$
+* :orange\_circle: LC 31. Next Permutation
+  * [Optimal Answer](https://leetcode.com/problems/next-permutation/submissions/1480023556). TC: $$O(N)$$, SC: $$O(1)$$
 
 ### Simulation
 
