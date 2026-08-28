@@ -127,6 +127,8 @@ icon: timeline
   * [Optimal Answer](https://leetcode.com/problems/minimum-absolute-difference/submissions/1976600387). TC: $$O(nlogn)$$, SC: $$O(logn)$$
 * :white\_circle: LC 3517. Smallest Palindromic Rearrangement I
   * [Optimal Answer](https://leetcode.com/problems/smallest-palindromic-rearrangement-i/submissions/2117923639). TC: $$O(nlogn)$$, SC: $$O(logn)$$
+* :orange\_circle: LC 179. Largest Number
+  * [Optimal Answer](https://leetcode.com/problems/largest-number/submissions/2123279707). TC: $$O(nlogn)$$, SC: $$O(n)$$
 
 ### **DNF algorithm**
 
