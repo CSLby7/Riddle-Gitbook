@@ -98,7 +98,7 @@ icon: right-left
   * Stack approach: Use `StringBuilder` to simulate `Stack`. [Answer](https://leetcode.com/problems/removing-stars-from-a-string/submissions/1465358090). TC: $$O(n)$$, SC: $$O(n)$$
   * 2 pointers approach: [Answer](https://leetcode.com/problems/removing-stars-from-a-string/submissions/1465361947). TC: $$O(n)$$, SC: $$pseudo-O(1)$$ due to the immutability of `String` in Java
 
-### **Sliding Window - General**
+### **Sliding Window (1D) General**
 
 * :white\_circle: LC 643. Maximum Average Subarray I
   * [Optimal Answer](https://leetcode.com/problems/maximum-average-subarray-i/submissions/1463823615); TC: $$O(n)$$, SC: $$O(1)$$
@@ -121,7 +121,7 @@ icon: right-left
 * :white\_circle: LC 1291. Sequential Digits
   * [Optimal Answer](https://leetcode.com/problems/sequential-digits/submissions/2108204943). TC: $$O(1)$$, SC: $$O(1)$$
 
-### **Sliding Window - Subarray/Substring Search Meeting With Requirements**
+### **Sliding Window (1D) Subarray/Substring Search Meeting With Requirements**
 
 #### Notes
 
@@ -201,4 +201,12 @@ icon: right-left
       * Then the window size becomes to `l` again but this new `l` size window may be **INVALID** and `maxFreq` may be **STALE**.
       * However, we do NOT care about these 2 issues. Since we want to find the max window, we can just **use the previous valid max window size to scan the array**.
       * **If there is a larger valid window size (> `l`), there must be a larger `maxFreq` because this equation `l-maxFreq <= k`. Only when `maxFreq` becomes larger, `l` can be larger as well.**
-      * That's also why we do **NOT need to consider decreasing `maxFreq`** when moving `start` index and do **NOT care if it is stale**. We **ONLY care and want to find a larger `maxFreq`**
+      * That's also why we do **NOT need to consider decreasing `maxFreq`** when moving `start` index and do **NOT care if it is stale**. We **ONLY care and want to find a larger `maxFreq`**&#x20;
+
+### **Sliding Window (2D)**
+
+* :orange\_circle: LC 3567. Minimum Absolute Difference in Sliding Submatrix
+  * Approach 1 - Brute force
+    * [Answer](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/submissions/2124267775). TC: $$O((m-k)(n-k)k^2logk)$$, SC: $$O(k^2)$$
+  * :thumbsup: Approach 2 - Sliding window
+    * [Optimal Answer](https://leetcode.com/problems/minimum-absolute-difference-in-sliding-submatrix/submissions/2124302720). TC: $$O((m-k)(n-k)klogk)$$, SC: $$O(k^2)$$
