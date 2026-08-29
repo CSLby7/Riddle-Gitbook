@@ -8,6 +8,7 @@
   * [Binary Search](algorithm-topics/binary-search.md)
   * [Array](algorithm-topics/array.md)
   * [Two Pointers](algorithm-topics/two-pointers.md)
+  * [Sliding Window](algorithm-topics/sliding-window.md)
   * [Linked List](algorithm-topics/linked-list.md)
   * [Hash Map/Set](algorithm-topics/hash-map-set.md)
   * [String](algorithm-topics/string.md)
