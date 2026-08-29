@@ -97,5 +97,3 @@ icon: right-left
 * LC 2390. Removing Stars From a String
   * Stack approach: Use `StringBuilder` to simulate `Stack`. [Answer](https://leetcode.com/problems/removing-stars-from-a-string/submissions/1465358090). TC: $$O(n)$$, SC: $$O(n)$$
   * 2 pointers approach: [Answer](https://leetcode.com/problems/removing-stars-from-a-string/submissions/1465361947). TC: $$O(n)$$, SC: $$pseudo-O(1)$$ due to the immutability of `String` in Java
-
-###
