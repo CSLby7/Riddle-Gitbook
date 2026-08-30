@@ -18,11 +18,12 @@ icon: rectangle-vertical-history
   * [Optimal Answer](https://leetcode.com/problems/adjacent-increasing-subarrays-detection-ii/solutions/6028753/java-c-python-one-pass-o-1-space). TC: $$O(n)$$, SC: $$O(1)$$
 * LC 1695. Maximum Erasure Value
   * [Optimal Answer](https://leetcode.com/problems/maximum-erasure-value/submissions/1973867371). TC: $$O(n)$$, SC: $$O(m)$$
-* :orange\_circle: LC 1888. Minimum Number of Flips to Make the Binary String Alternating
+* :white\_circle: LC 1888. Minimum Number of Flips to Make the Binary String Alternating
   * **Key Insight:**&#x20;
     * My initial solution simulated flips from left to right, where the decision for each character depended on the corrected value of the previous character. This created a **sequential dependency**, making the state **impossible** to update incrementally when the sliding window moved—removing the leftmost character could invalidate the entire computation.
     * The correct approach is to **redefine the state**. Instead of tracking the flip process, represent the answer as the **sum of independent per-index contributions** (mismatches against the **two fixed alternating patterns**). Once each index contributes independently, a sliding window only needs to remove the left contribution and add the right contribution, reducing the complexity from **O(n²)** to **O(n)**.
-  * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/submissions/2058561844). TC: $$O(n)$$, SC: $$O(1)$$
+  * The second time I encountered this problem, I independently came up with the sliding window solution. Downgraded to ⚪.
+  * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/submissions/2125488102). TC: $$O(n)$$, SC: $$O(1)$$
 * LC 1151. Minimum Swaps to Group All 1's Together
   * [Optimal Answer](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/submissions/2059914258/). TC: $$O(n)$$, SC: $$O(1)$$
 * :orange\_circle: LC 3013. Divide an Array Into Subarrays With Minimum Cost II
