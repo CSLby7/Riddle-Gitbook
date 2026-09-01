@@ -133,6 +133,8 @@ icon: map-location-dot
   * [Optimal Answer](https://leetcode.com/problems/count-covered-buildings/submissions/1955173800). TC: $$O(n)$$, SC: $$O(n)$$
 * LC 1797. Design Authentication Manager
   * [Optimal Answer](https://leetcode.com/problems/design-authentication-manager/submissions/2045208041). TC: $$O(n)$$, SC: $$O(n)$$
+* LC 3020. Find the Maximum Number of Elements in Subset
+  * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/submissions/2126720367). TC: $$O(n*loglogM)$$, SC: $$O(n)$$
 
 ### **LinkedHashSet**
 
