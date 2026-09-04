@@ -135,6 +135,8 @@ icon: map-location-dot
   * [Optimal Answer](https://leetcode.com/problems/design-authentication-manager/submissions/2045208041). TC: $$O(n)$$, SC: $$O(n)$$
 * LC 3020. Find the Maximum Number of Elements in Subset
   * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/submissions/2126720367). TC: $$O(n*loglogM)$$, SC: $$O(n)$$
+* LC 2840. Check if Strings Can be Made Equal With Operations II
+  * [Optimal Answer](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/submissions/2130195590). TC: $$O(n)$$, SC: $$O(1)$$
 
 ### **LinkedHashSet**
 
