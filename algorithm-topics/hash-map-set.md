@@ -219,3 +219,5 @@ icon: map-location-dot
     * [Optimal Answer](https://leetcode.com/problems/avoid-flood-in-the-city/submissions/1919425763). TC: $$O(n*logn)$$, SC: $$O(n)$$
 * LC 2817. Minimum Absolute Difference Between Elements With Constraint
   * [Optimal Answer](https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/submissions/1944503743). TC: $$O(nlogn)$$, SC: $$O(n)$$
+* LC 1331. Rank Transform of an Array
+  * [Optimal Answer](https://leetcode.com/problems/rank-transform-of-an-array/submissions/2133319831). TC:$$O(nlogn$$), SC: $$O(n)$$
