@@ -120,6 +120,8 @@ icon: diagram-project
   * [Optimal Answer](https://leetcode.com/problems/shortest-distance-from-all-buildings/submissions/1882155994).  TC: $$O(m^2*n^2)$$, SC: $$O(m*n)$$
 * LC 827. Making A Large Island
   * [Optimal Answer](https://leetcode.com/problems/making-a-large-island/submissions/1932443143). TC: $$O(n^2)$$, SC: $$O(n^2)$$
+* :orange\_circle: LC 749. Contain Virus
+  * [Optimal Answer](https://leetcode.com/problems/contain-virus/submissions/2134447732). TC: $$O((MN)^2)$$, SC: $$O(MN)$$
 
 ### :jigsaw: **Dijkstra's Algorithm**
 
