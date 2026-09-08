@@ -365,6 +365,30 @@ icon: diagram-successor
 * :red\_circle: LC 3336. Find the Number of Subsequences With Equal GCD
   * It's hard to come up with the DP state definition.
   * [Optimal Answer](https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/submissions/2120001857). TC: $$O(n*max^2 * log(max))$$, SC: $$O(max^2)$$
+* :white\_circle: LC 486. Predict the Winner
+  * Approach 1: Track both players' scores
+    * I came up this solution by myself.
+    * ```
+      dp[i][j][0] = maximum score the first player can get from nums[i...j]
+      dp[i][j][1] = score the second player gets from nums[i...j]
+      dp[i][j][0] = max(
+          nums[i] + dp[i+1][j][1],
+          nums[j] + dp[i][j-1][1]
+      );
+      dp[i][j][1] = sum(i, j) - dp[i][j][0];
+      ```
+    * [Optimal Answer](https://leetcode.com/problems/predict-the-winner/submissions/2134599918).  TC: $$O(n^2)$$, SC: $$O(n)$$
+  * :thumbsup: Approach 2: Track score difference
+    * ```
+      dp[i][j] = maximum score difference
+                 (first player's score - second player's score)
+                 from nums[i...j]
+      dp[i][j] = max(
+          nums[i] - dp[i+1][j],
+          nums[j] - dp[i][j-1]
+      );
+      ```
+    * [Optimal Answer](https://leetcode.com/problems/predict-the-winner/submissions/2134608780). TC: $$O(n^2)$$, SC: $$O(n)$$
 
 #### :jigsaw: **Edit Distance series**
 
