@@ -30,6 +30,11 @@ icon: rectangle-vertical-history
   * [Optimal Answer](https://leetcode.com/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/submissions/2074056931). TC: $$O(nlogdist)$$, SC: $$O(dist)$$
 * :white\_circle: LC 1291. Sequential Digits
   * [Optimal Answer](https://leetcode.com/problems/sequential-digits/submissions/2108204943). TC: $$O(1)$$, SC: $$O(1)$$
+* :white\_circle: LC 3413. Maximum Coins From K Consecutive Bags
+  * Approach 1 using Greedy+Prefix sum+Binary Search
+    * [Answer](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/submissions/2137007301). TC: $$O(nlogn)$$, SC: $$O(n)$$
+  * Approach 2 using Sliding window
+    * TBD
 
 ## **Sliding Window (1D) Subarray/Substring Search Meeting With Requirements**
 
