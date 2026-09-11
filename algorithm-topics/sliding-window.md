@@ -34,7 +34,7 @@ icon: rectangle-vertical-history
   * Approach 1 using Greedy+Prefix sum+Binary Search
     * [Answer](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/submissions/2137007301). TC: $$O(nlogn)$$, SC: $$O(n)$$
   * Approach 2 using Sliding window
-    * TBD
+    * [Optimal Answer](https://leetcode.com/problems/maximum-coins-from-k-consecutive-bags/submissions/2138118714). TC: $$O(nlogn)$$, SC: $$O(logn)$$
 
 ## **Sliding Window (1D) Subarray/Substring Search Meeting With Requirements**
 
