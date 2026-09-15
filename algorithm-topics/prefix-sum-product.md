@@ -97,6 +97,9 @@ icon: integral
     * [Answer](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/submissions/1956364536). TC: $$O(m*n*log(min(m,n)))$$, SC: $$O(m*n)$$
   * :thumbsup: Approach 2: 2D Prefix Sum + Enumeration
     * [Optimal Answer](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/submissions/1957351872). TC: $$O(m*n)$$, SC: $$O(m*n)$$
+* LC 3546. Equal Sum Grid Partition I
+  * :full\_moon\_with\_face:
+  * [Optimal Answer](https://leetcode.com/problems/equal-sum-grid-partition-i/submissions/2143081845). SC: $$O(mn)$$, SC: $$O(1)$$
 
 ### **Prefix with State Transformation**
 
