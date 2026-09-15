@@ -94,3 +94,6 @@ icon: arrow-up-a-z
   * [Optimal Answer](https://leetcode.com/problems/fizz-buzz/submissions/1942464593). TC: $$O(n)$$, SC: $$O(1)$$
 * :white\_circle: LC 3713. Longest Balanced Substring I
   * [Optimal Answer](https://leetcode.com/problems/longest-balanced-substring-i/submissions/2071774078/). TC: $$O(n^2)$$, SC: $$O(1)$$
+* LC 3499. Maximize Active Section with Trade I
+  * :full\_moon\_with\_face:
+  * [Optimal Answer](https://leetcode.com/problems/maximize-active-section-with-trade-i/submissions/2142922824). TC: $$O(n)$$, SC: $$O(n)$$
