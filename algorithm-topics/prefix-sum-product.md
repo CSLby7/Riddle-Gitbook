@@ -66,6 +66,10 @@ icon: integral
     * → group prefix sums by index % k
     * → for each r, subtract the minimum previous prefix in the same group
   * [Optimal Answer](https://leetcode.com/problems/maximum-subarray-sum-with-length-divisible-by-k/submissions/1994583237). TC: $$O(n)$$, SC: $$O(k)$$
+* LC 3546. Equal Sum Grid Partition I :full\_moon\_with\_face:
+  * [Optimal Answer](https://leetcode.com/problems/equal-sum-grid-partition-i/submissions/2143081845). SC: $$O(mn)$$, SC: $$O(1)$$
+* :white\_circle: LC 3548. Equal Sum Grid Partition II :full\_moon\_with\_face:
+  * [Optimal Answer](https://leetcode.com/problems/equal-sum-grid-partition-ii/submissions/2143931570). SC: $$O(mn)$$, SC: $$O(mn)$$
 
 ### **2D Prefix Sum**
 
@@ -97,9 +101,6 @@ icon: integral
     * [Answer](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/submissions/1956364536). TC: $$O(m*n*log(min(m,n)))$$, SC: $$O(m*n)$$
   * :thumbsup: Approach 2: 2D Prefix Sum + Enumeration
     * [Optimal Answer](https://leetcode.com/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/submissions/1957351872). TC: $$O(m*n)$$, SC: $$O(m*n)$$
-* LC 3546. Equal Sum Grid Partition I
-  * :full\_moon\_with\_face:
-  * [Optimal Answer](https://leetcode.com/problems/equal-sum-grid-partition-i/submissions/2143081845). SC: $$O(mn)$$, SC: $$O(1)$$
 
 ### **Prefix with State Transformation**
 
