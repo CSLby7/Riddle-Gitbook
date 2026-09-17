@@ -137,8 +137,7 @@ icon: map-location-dot
   * [Optimal Answer](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset/submissions/2126720367). TC: $$O(n*loglogM)$$, SC: $$O(n)$$
 * LC 2840. Check if Strings Can be Made Equal With Operations II
   * [Optimal Answer](https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/submissions/2130195590). TC: $$O(n)$$, SC: $$O(1)$$
-* :orange\_circle: LC 3488. Closest Equal Element Queries
-  * :last\_quarter\_moon\_with\_face:
+* :orange\_circle: LC 3488. Closest Equal Element Queries :last\_quarter\_moon\_with\_face:
   * [Optimal Answer](https://leetcode.com/problems/closest-equal-element-queries/submissions/2145188607). TC: $$O(n+q)$$, SC: $$O(n)$$
 
 ### **LinkedHashSet**
