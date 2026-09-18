@@ -173,6 +173,13 @@ icon: calculator-simple
     * The gcd of the entire array is a necessary feasibility check
     * If `gcd(nums[0], nums[1], ..., nums[n-1]) > 1`, then it is impossible to ever create a `1`&#x20;
   * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/submissions/1981333487). TC: $$O(n^2logM)$$, SC: $$O(1)$$
+* :red\_circle: LC 3312. Sorted GCD Pair Queries :new\_moon\_with\_face:
+  * Observations
+    * `gcdPairs` can be O(n²), but GCD has a small value range → use **GCD frequency + prefix sum** to represent the sorted array, then binary search queries.
+    * **Hard part: get exact GCD frequency without enumerating pairs.**
+      * Both numbers are divisible by `g` ⇔ their GCD is divisible by `g`.
+        * Count such pairs via multiples + `C(k, 2)`, then use **inclusion-exclusion** from large → small to remove `GCD = 2g, 3g, ...` and obtain `GCD exactly = g`.
+  * TC: $$O(n+mlogm+qlogm)$$, SC: $$O(m)$$
 
 ### Enumeration / Brute Force
 
