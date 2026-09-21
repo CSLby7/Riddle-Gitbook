@@ -101,6 +101,8 @@ icon: face-tongue-money
     * [Optimal Answer](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/submissions/2044999348). TC: $$O(nlogn)$$, SC: $$O(logn)$$
 * LC 3689. Maximum Total Subarray Value I
   * [Optimal Answer](https://leetcode.com/problems/maximum-total-subarray-value-i/submissions/2096025308). TC: $$O(n)$$, SC: $$O(1)$$
+* :white\_circle: LC 3014. Minimum Number of Pushes to Type Word I :last\_quarter\_moon\_with\_face:
+  * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2149098308). TC: $$O(1)$$, SC: $$O(1)$$
 
 ### Resource Balancing
 
