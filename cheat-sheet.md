@@ -72,6 +72,7 @@ icon: scroll
     T element = arr[random.nextInt(arr.length)]
     ```
 * `1e-5 == 1 * 10^-5` (scientific notation for double)
+* Ceiling division for positive integer&#x73;**:** `ceil(a / b) = (a + b - 1) / b`
 
 ### **Bit**
 
