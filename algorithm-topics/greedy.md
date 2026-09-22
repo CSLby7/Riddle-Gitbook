@@ -105,6 +105,8 @@ icon: face-tongue-money
   * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/submissions/2149098308). TC: $$O(1)$$, SC: $$O(1)$$
 * :white\_circle: LC 3016. Minimum Number of Pushes to Type Word II :full\_moon\_with\_face:
   * [Optimal Answer](https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/submissions/2149120749). TC: $$O(n)$$, SC: $$O(1)$$
+* :orange\_circle: LC 3302. Find the Lexicographically Smallest Valid Sequence :new\_moon\_with\_face:
+  * [Optimal Answer](https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/submissions/2150231881). TC: $$O(m+n)$$, SC: $$O(n)$$
 
 ### Resource Balancing
 
